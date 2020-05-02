@@ -21,28 +21,28 @@
 	</div>
 </div>
 
-"우리가 두려워해야 할 것은 오직 두려움 그 자체이다" was stupid advice.
+"두려워해야 할 것은 오직 두려움 그 자체이다"는 바보같은 충고였습니다.
 
-Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+물론, 화장지를 사재기하지 말아야 하죠. 하지만 정책 책임자들이 두려움 자체를 두려워한다면, "집단 공황"을 막기 위해 실제 위험을 경시할 것입니다. 두려움은 문제가 아닙니다. 어떻게 두려움을 "극복"하는지가 문제이죠. 두려움은 지금 위험에 대처하고, 나중에 있을 위험에 대비할 힘을 줍니다.
 
-Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+솔직히 말하면, 우리 (마르셀, 전역병학자 + 니키, 그림/코드)는 걱정하고 있습니다. 당신도 그럴 거라고 생각합니다! 우리의 두려움을 말미암아 **상호작용형 시뮬레이션을** 만들었습니다. *당신도* 두려움을 이해해보세요:
 
-* **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks)
-* **The Next Few Years** (loss of immunity? no vaccine?)
+* **지난 몇 달** (전염병학 101, SEIR 모형, R & R<sub>0</sub>)
+* **다음 몇 달** (락다운, 동선 추적, 마스크)
+* **다음 몇 년** (면역 없음? 백신 없음?)
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+이 안내서는 (2020년 5월 1일 쓰임. 각주를 클릭하세요!→[^timestamp]) 희망 *그리고* 두려움을 제공하려고 만들어졌습니다. COVID-19를 이겨내고 **정신건강과 재정적인 건강도 보호하기 위해**, 계획을 세우기 위해 낙관적인 생각이 필요하고 백업 계획을 세우기 위해 비관적인 생각이 필요합니다. 글래디스 브론윈 스턴 작가가 말했듯이, *“낙관주의자는 날 수 있다는 희망에 비행기를 발명하고, 비관주의자는 추락할 수 있다는 염려에 낙하산을 발명한다.”*
 
 [^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
     
     **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
 
-So, buckle in: we're about to experience some turbulence.
+자, 이제 곧 난기류를 경험하게 될테니 단단히 준비하세요.
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>지난 몇 </div>
+        <div>지난 몇달</div>
     </div>
 </div>
 
