@@ -2,27 +2,26 @@
     <div>
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	What Happens Next?
+        	다음에 무슨 일이 일어날까요?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
+			시뮬레이션으로 설명하는 COVID-19 이후의 미래
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
-				🕐 30 min play/read
+				🕐 30 분 플레이/읽기
 				&nbsp;&middot;&nbsp;
 			</b>
-			by
-			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologist)
+			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">마르셀 살라테</a>
+			(전염병학자)
 			&
-			<a href="https://ncase.me/">Nicky Case</a>
-			(art/code)
+			<a href="https://ncase.me/">니키 케이스</a>
+			(그림/코드)
 		</div>
 	</div>
 </div>
 
-"The only thing to fear is fear itself" was stupid advice.
+"우리가 두려워해야 할 것은 오직 두려움 그 자체이다" was stupid advice.
 
 Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
 
@@ -43,7 +42,7 @@ So, buckle in: we're about to experience some turbulence.
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>지난 몇 </div>
     </div>
 </div>
 
@@ -708,4 +707,4 @@ So what does this mean for YOU, right now?
 
 Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
 
-The only thing to fear is the idea that the only thing to fear is fear itself.
+우리가 두려워해야 할 것은 오직 두려움 그 자체라는 생각이다.
