@@ -21,137 +21,137 @@
 	</div>
 </div>
 
-"두려워해야 할 것은 오직 두려움 그 자체이다"는 바보같은 충고였습니다.
+"두려워해야 할 것은 오직 두려움 그 자체이다"는 어리석은 조언이었습니다.
 
-물론, 화장지를 사재기하지 말아야 하죠. 하지만 정책 책임자들이 두려움 자체를 두려워한다면, "집단 공황"을 막기 위해 실제 위험을 경시할 것입니다. 두려움은 문제가 아닙니다. 어떻게 두려움을 "극복"하는지가 문제이죠. 두려움은 지금 위험에 대처하고, 나중에 있을 위험에 대비할 힘을 줍니다.
+물론, 화장지를 사재기하지 말아야하죠. 하지만 정책 입안자들이 두려움 자체를 두려워하면, "집단 공황"을 막기 위해 실제 위험을 경시할 것입니다. 두려움은 문제가 아닙니다. 어떻게 두려움을 "극복"하는지가 문제죠. 두려움은 지금 위험에 대처하고, 나중에 있을 위험에 대비할 힘을 줍니다.
 
-솔직히 말하면, 우리 (마르셀, 전역병학자 + 니키, 그림/코드)는 걱정하고 있습니다. 당신도 그럴 거라고 생각합니다! 우리의 두려움을 말미암아 **상호작용형 시뮬레이션을** 만들었습니다. *당신도* 두려움을 이해해보세요:
+솔직히, 우리 (마르셀, 전역병학자 + 니키, 그림/코드)는 걱정하고 있습니다. 당신도 그럴 거라고 생각합니다! 우리의 두려움을 말미암아 **상호작용형 시뮬레이션을** 만들게 되었습니다. *당신도* 두려움을 이해하고 이겨내보세요:
 
-* **지난 몇 달** (전염병학 101, SEIR 모형, R & R<sub>0</sub>)
+* **지난 몇 달** (역학 101, SEIR 모형, R & R<sub>0</sub>)
 * **다음 몇 달** (락다운, 동선 추적, 마스크)
-* **다음 몇 년** (면역 없음? 백신 없음?)
+* **다음 몇 년** (면역 손실? 백신 없음?)
 
-이 안내서는 (2020년 5월 1일 쓰임. 각주를 클릭하세요!→[^timestamp]) 희망 *그리고* 두려움을 제공하려고 만들어졌습니다. COVID-19를 이겨내고 **정신건강과 재정적인 건강도 보호하기 위해**, 계획을 세우기 위해 낙관적인 생각이 필요하고 백업 계획을 세우기 위해 비관적인 생각이 필요합니다. 글래디스 브론윈 스턴 작가가 말했듯이, *“낙관주의자는 날 수 있다는 희망에 비행기를 발명하고, 비관주의자는 추락할 수 있다는 염려에 낙하산을 발명한다.”*
+이 안내서는 (2020년 5월 1일 발행. 각주를 클릭하세요!→[^timestamp]) 희망 *그리고* 두려움을 주기 위한 것입니다. COVID-19를 **정신 및 재정 건강을 위해**, 계획을 세우려면 낙관적인 생각이 필요하고 백업 계획을 세우려면 비관적인 생각이 필요합니다. 글래디스 브론윈 스턴 작가가 말했듯이, *“낙관주의자는 날 수 있다는 희망에 비행기를 발명하고, 비관주의자는 추락할 수 있다는 염려에 낙하산을 발명합니다.”*
 
-[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+[^timestamp]: 이 각주에는 출처, 링크, 보너스 해설을 포함합니다. 이 해설처럼!
     
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
+    **이 안내서는 2020년 5월 1일 발행되었습니다.** 많은 세부 사항들이 시대에 뒤떨어지겠지만, 우리는 이 안내서가 95%의 미래를 다루고, 역학 101은 영원히 유용할 것이라고 확신합니다.
 
-자, 이제 곧 난기류를 경험하게 될테니 단단히 준비하세요.
+자, 이제 단단히 준비하시고 난기류를 경험하세요.
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>지난 몇달</div>
+        <div>지난 몇 달</div>
     </div>
 </div>
 
-Pilots use flight simulators to learn how not to crash planes.
+비행기 조종사는 추락하지 않기 위해 비행 시뮬레이터를 사용합니다.
 
-**Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+**전염병학자들은 인류를 돕기 위해 전염병 시뮬레이터를 사용합니다.**
 
-So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
+자, 아주 *아주* 간단한 "전염병 시뮬레이터" 입니다! 이 시뮬레이션에서 <icon i></icon> 감염군은 <icon s></icon> 감염 대상군을 <icon i></icon> 감염시킬 수 있습니다:
 
 ![](pics/spread.png)
 
-It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
+*발생 초기에* COVID-19 바이러스는 *평균적으로* [^serial_interval] 4일 마다 <icon i></icon> 에서 <icon s></icon> 에게로 전파되었습니다. (많은 변수가 있다는 것을 명심하세요.)
 
-[^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
+[^serial_interval]: “평균 [연속] 기간은 3.96일입니다 (95% CI 3.53–4.39일)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (고지 사항: 초기 문서는 최종 버전으로 간주되지 않습니다)
 
-If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <icon i></icon>, what happens? 
+만약 인구의 0.001% <icon i></icon>가 "4일마다 2배씩 늘어나고" *아무것도 하지 않는다고* 가정한다면, 어떻게 될까요? 
 
-**Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
+**시뮬레이션을 재생하시려면 "시작"을 클릭하세요! 나중에 다른 설정으로 해보실 수 있습니다:** (기술 참고 사항: [^caveats])
 
-[^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
+[^caveats]: **모든 시뮬레이션은 교육 목적으로 단순화되었습니다.**
     
-    One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
+    단순화: 이 시뮬레이션에 "X일마다 1명씩 감염"이라고 입력하면, 매일 1/X씩 감염자 수가 증가합니다. 이 설정은 다른 시뮬레이션에도 적용됩니다. "X일마다 회복"은 감염자 수가 매일 1/X씩 감소합니다.
     
-    Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
+    정확하게 *동일하지*는 않지만 충분히 근접하고, 직접 전염성/회복률을 설정하는 것보다 직관적입니다.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
+이것은 **지수적 성장 곡선입니다.** 처음에는 적은 수로 시작해서 기하 급수적으로 증가하죠. "아 그냥 독감인가" 에서 "아 맞다. 독감으로 *부유한 도시에서 사람들이 대량으로 죽어나가지 않는데*". 
 
 ![](pics/exponential.png)
 
-But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
+하지만 이 시뮬레이션은 틀렸습니다. 다행히도 기하 급수적으로 늘어날 수 없습니다. 다른 사람들이 바이러스를 *이미* 가지고 있으면 바이러스가 전달되지 않습니다:
 
 ![](pics/susceptibles.png)
 
-The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, **but the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s.**
+<icon i></icon> 많을수록, <icon s></icon>가 <icon i></icon>로 빠르게 변하지만, <icon s></icon> **적을수록, <icon s></icon>가 <icon i></icon>로 *느리게* 변합니다.**
 
-How's this change the growth of an epidemic? Let's find out:
+이 사실로 전염병 성장 곡선이 어떻게 바뀔까요? 한번 알아봅시다:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
+이것은 "S-자형" **로지스틱 성장 곡선입니다.** 처음에는 적은 수로 시작해서 기하 급수적으로 증가하다가 증가 속도가 느려집니다.
 
-But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
+하지만 이 시뮬레이션 *역시* 틀렸습니다. <icon i></icon> 감염군은 결국 1) 회복하거나, 2) 폐 손상을 "회복"하거나, 또는 3) 사망함으로써 바이러스를 전달하지 않습니다.
 
-For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
+단순화하기 위해, 모든 <icon i></icon> 감염군이 <icon r></icon> 회복군이 되었다고 가정해봅시다. (실제라면 일부는 사망한다는 것을 명심하세요.) <icon r></icon> 회복군은 다시 감염될 수 없으며, *잠시만!* 평생 면역된다고 가정해봅시다.
 
-With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <icon i></icon>:**
+COVID-19는 <icon i></icon> *평균적으로* [^infectiousness] 10일 동안 감염됩니다. 즉, 10일이 지나기전에 일부는 회복되고, 일부는 그 후에 회복됩니다. **인구의 100%<icon i></icon>로 *시작하면* 다음과 같습니다:**
 
-[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
+[^infectiousness]: “평균 전달 가능한 기간은 \[...\] 9.5일입니다.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) 예, "중앙값"과 "평균"은 같지 않다는 것을 알고 있습니다. 단순 교육 목적을 위해 같은 의미로 사용했습니다.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
-This is the opposite of exponential growth, the **exponential decay curve.**
+이것은 지수적 성장 곡선의 반대인 **지수적 감쇠 곡선입니다.**
 
-Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+이제 S-자형 로지스틱 성장 곡선에 회복을 *포함*해서 가정하면 어떻게 될까요?
 
 ![](pics/graphs_q.png)
 
-Let's find out.
+한번 알아봅시다.
 
-<b style='color:#ff4040'>Red curve</b> is *current* cases <icon i></icon>,    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>),
-starts at just 0.001% <icon i></icon>:
+<b style='color:#ff4040'>빨간색 곡선</b>은 *현재* 사례이고 <icon i></icon>,    
+<b style='color:#999999'>회색 곡선</b>은 *총* 사례입니다 (현재 확진자 + 회복 <icon r></icon>),
+0.001%의 감염군으로 시작<icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
+여기서 *그* 유명한 곡선이 나옵니다! 종형 곡선은 아니고, "로그 정규분포" 곡선도 아닙니다. 이름은 없습니다. 하지만 이 곡선을 수십억번 보셨고 평평해지기를 바라셨을 겁니다.
 
-This is the the **SIR Model**,[^sir]    
-(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
-the *second*-most important idea in Epidemiology 101:
+이것은 **SIR 모형입니다**,[^sir]    
+(<icon s></icon>**S**usceptible 감염대상군 <icon i></icon>**I**nfectious 감염군 <icon r></icon>**R**ecovered 회복군)      
+역학 개론에서 *두 번째*로 중요한 개념입니다:
 
-[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: SIR 모형의 더 자세한 설명은 [질병 모형 연구소](https://www.idmod.org/docs/hiv/model-sir.html#)와 [위키피디아](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)를 참고하세요.
 
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**참고: 실제 시뮬레이션은 이보다 *훨씬* 더 정교합니다!** 그러나 SIR 모형은 자세한 뉘앙스 없이 일반적인 결과를 설명할 수 있습니다.
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+실제로 한 단계를 추가해보겠습니다. <icon s></icon> 감염대상군이 <icon i></icon> 감염군이 되기 전에, <icon e></icon> 접촉군이 됩니다. 질병에 감염된 후 잠복기가 있어 아직 전달할 수 없는 상태입니다. *감염*되었지만 아직 *감염*시킬수 없는 상태죠.
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(이 새로운 질병 확산 모형을 **SEIR 모형**라고 합니다.[^seir], "E"는 <icon e></icon> "Exposed 접촉군"을 의미합니다. 여기서 "접촉"은 바이러스에 감염되었거나 감염되지 않았다는 일상적인 의미가 아닙니다. 의학적인 용어로서, "접촉"은 감염대상군으로부터 감염되었다는 의미입니다. 용어가 좀 헷갈리죠.)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: SEIR Model 모형의 더 자세한 설명은 [질병 모형 연구소](https://www.idmod.org/docs/hiv/model-seir.html)와 [위키피디아](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)를 참고하세요.
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+COVID-19는 <icon e></icon> *평균적으로* [^latent] 3일 동안 감염되었지만 감염시킬 수 없는 잠복기가 있습니다. 시뮬레이션에 추가하면 어떻게 될까요?
 
-[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: “초기 COVID-19 사례에 관한 연구에서 평균 5.2일의 배양 기간으로 가정할 때, 감염 증상이 나타나기 2.3일 전부터 (95% CI, 0.8–3.0 days) 감염을 시킬 수 있는 것으로 추정했습니다.” (변역: 증상이 5일째 나타난다고 가정했을때, 감염은 2일전부터 전달 가능하다 = 3일째 전달 가능하다.) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <icon e></icon>),    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>):
+<b style='color:#ff4040'>빨간색 <b style='color:#FF9393'>+ 분홍색</b> 곡선은</b> *현재* 사례이고 (<icon i></icon>감염군 + <icon e></icon>접촉군),    
+<b style='color:#888'>회색 곡선은</b> *총* 사례입니다. (current + recovered <icon r></icon>):
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
+많이 달라지지 않았습니다! 얼마나 오래 <icon e></icon> 접촉군이냐 <icon e></icon>접촉군-대-<icon i></icon>감염군 비율을 바꾸고 *언제* 현재 사례가 최고점인지를 결정합니다... 하지만 최고점의 *높이*와 총 사례 수는 동일합니다.
 
-Why's that? Because of the *first*-most important idea in Epidemiology 101:
+왜일까요? 역학 개론에서 *첫 번째*로 중요한 개념때문입니다:
 
 ![](pics/r.png)
 
