@@ -34,7 +34,7 @@
 이 안내서는 (2020년 5월 1일 발행. 각주를 클릭하세요!→[^timestamp]) 희망 *그리고* 두려움을 주기 위한 것입니다. COVID-19를 **정신 및 재정 건강을 위해**, 계획을 세우려면 낙관적인 생각이 필요하고 백업 계획을 세우려면 비관적인 생각이 필요합니다. 글래디스 브론윈 스턴 작가가 말했듯이, *“낙관주의자는 날 수 있다는 희망에 비행기를 발명하고, 비관주의자는 추락할 수 있다는 염려에 낙하산을 발명합니다.”*
 
 [^timestamp]: 이 각주에는 출처, 링크, 보너스 해설을 포함합니다. 이 해설처럼!
-    
+
     **이 안내서는 2020년 5월 1일 발행되었습니다.** 많은 세부 사항들이 시대에 뒤떨어지겠지만, 우리는 이 안내서가 95%의 미래를 다루고, 역학 101은 영원히 유용할 것이라고 확신합니다.
 
 자, 이제 단단히 준비하시고 난기류를 경험하세요.
@@ -58,21 +58,21 @@
 
 [^serial_interval]: “평균 [연속] 기간은 3.96일입니다 (95% CI 3.53–4.39일)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (고지 사항: 초기 문서는 최종 버전으로 간주하지 않습니다)
 
-만약 인구의 0.001% <icon i></icon>가 "4일마다 2배씩 늘어나고" *아무것도 하지 않는다고* 가정한다면, 어떻게 될까요? 
+만약 인구의 0.001% <icon i></icon>가 "4일마다 2배씩 늘어나고" *아무것도 하지 않는다고* 가정한다면, 어떻게 될까요?
 
 **시뮬레이션을 재생하시려면 "시작"을 클릭하세요! 나중에 다른 설정으로 해보실 수 있습니다:** (기술 참고 사항: [^caveats])
 
 [^caveats]: **모든 시뮬레이션은 교육 목적으로 단순화되었습니다.**
-    
+
     단순화: 이 시뮬레이션에 "X일마다 1명씩 감염"이라고 입력하면, 매일 1/X씩 감염자 수가 증가합니다. 이 설정은 다른 시뮬레이션에도 적용됩니다. "X일마다 회복"은 감염자 수가 매일 1/X씩 감소합니다.
-    
+
     정확하게 *동일하지*는 않지만, 충분히 근접하고, 직접 전염성/회복률을 설정하는 것보다 직관적입니다.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-이것은 **지수적 성장 곡선입니다.** 처음에는 적은 수로 시작해서 기하 급수적으로 증가하죠. "아 그냥 독감인가" 에서 "아 맞다. 독감으로 *부유한 도시에서 사람들이 대량으로 죽어나가지 않는데*". 
+이것은 **지수적 성장 곡선입니다.** 처음에는 적은 수로 시작해서 기하 급수적으로 증가하죠. "아 그냥 독감인가" 에서 "아 맞다. 독감으로 *부유한 도시에서 사람들이 대량으로 죽어나가지 않는데*".
 
 ![](pics/exponential.png)
 
@@ -159,86 +159,85 @@ Short for "Reproduction number". It's the *average* number of people an <icon i>
 
 ![](pics/r2.png)
 
-**R** changes over the course of an outbreak, as we get more immunity & interventions.
+**R**은 면역과 개입 방법이 늘어남이 따라 변화합니다.
 
-**R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
+**R<sub>0</sub>** (R-노드라고 발음)은 *면역 또는 개입 전에 발병한 시점입니다*. R<sub>0</sub>은 바이러스의 자체의 힘을 더 자세히 반영하지만 장소마다 다릅니다. 예를 들어, R<sub>0</sub>은 시골 지역보다 도시 지역에서 더 높습니다.
 
-(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
+(대부분의 뉴스 기사 및 일부 연구 논문에서 R과 R<sub>0</sub>를 혼동 합니다! 용어가 좀 헷갈리죠.)
 
-The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
+"그" 계절 독감의 R<sub>0</sub>은 약 1.28[^r0_flu]입니다. 그 말은, 독감 시즌이 *시작될 때* <icon i></icon> 감염군이 *평균적으로* 1.28명을 감염시키는 것입니다. (이 숫자가 정수가 아닌 것이 이상하시면, 엄마들이 "평균" 2.4명의 자녀를 가진다는 것을 생각해보세요. 반명의 아이가 있다는 얘기가 아닙니다.)
 
-[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+[^r0_flu]: “계절 독감의 평균 R값은 1.28명입니다. (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+COVID-19의 R<sub>0</sub>은 약 2.2명으로 추정했습니다.[^r0_covid] 하지만 *아직 진행되고 있는* 한 연구는 우한에서 5.7(!)명이라고 추정했습니다.[^r0_wuhan]
 
-The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
+[^r0_covid]: “2019-nCoV의 R0 기초감염재생산수가 약 2.2명으로 추정합니다. (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
-[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+[^r0_wuhan]: “평균 R0가 약 5.7명으로 추청합니다. (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
+시뮬레이션은 *시작과 평균적으로* <icon i></icon> 감염군이 4일마다, 10일 동안 감염시킵니다. "10일"을 "4일"로 나누면 2.5가 됩니다. 이것은 *시작과 평균적으로* 각각의 <icon i></icon> 감염군이 다른 2.5명을 감염시킨다는 말입니다. 따라서, R<sub>0</sub> = 2.5. (주의 사항:[^r0_caveats_sim])
 
-In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
+[^r0_caveats_sim]: "감염된 기간" 내내 똑같은 점염성이 있다고 가정했습니다. 역시 교육 목적을 위해 단순화했습니다.
 
-[^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
-
-**Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
+**R<sub>0</sub> 계산기를 이용하여 R<sub>0</sub>가 회복 시간과 새로운 감염까지 걸리는 시간에 어떻게 영향을 미치는지 확인하세요:**
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
+하지만 명심하세요. <icon s></icon> 감염대상군이 적을수록, <icon s></icon> 감염대상군이 <icon i></icon>로 *느리게* 감염됩니다. *현재* 감염재생산수 (R)는 *기초* 감염재생산수 (R<sub>0</sub>) 뿐만 아니라, *또한* 얼마나 사람들이 <icon s></icon> 감염대상군에 속하지 않는지도 포함합니다. (예를 들어, 자연면역으로 회복하게 되는 경우를 말합니다.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
+집단의 대부분이 면역력을 가졌으면, R < 1이며 방역이 이뤄집니다! 이것이 바로 **집단면역*이라고 합니다*. 독감의 경우 *백신으로* 집단면역이 이뤄집니다. 사람들이 감염되도록 방임하여 "자연적으로 집단면역"을 이룬다는 전략은 *끔찍한* 생각입니다. (그러나 생각하시는 이유 때문은 아닐겁니다! 나중에 설명하겠습니다.)
 
-Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
+이제 SEIR 모형을 R<sub>0</sub>를 포함해 다시 해봅시다, 시간에 따른 R과 집단면역 임계값을 확인해보세요:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
+**참고: 집단면역의 경우 총 사럐는 *멈추지 않고* 계속 증가합니다!** 그리고 현재 사례가 정점에 도달할때 *정확하게* 집단면역의 사례는 교차합니다. (설정값에 관계없이 발생합니다. 직접 시도해보세요!)
 
-This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
+<icon s></icon> 감염대상군이 아닌 사람이 집단면역 임계값보다 더 많을 경우, R < 1 이 되기 때문입니다. 그리고 R < 1 일때, 정점에 이르고 새로운 사례가 없습니다.
 
-**If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
+**이 안내서에서 한 가지만 얻으신다면, 여기 있습니다.** 굉장히 복잡한 도표이므로 충분한 시간을 두고 숙지하세요:
 
 ![](pics/r3.png)
 
-**This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!**
+**즉, COVID-19를 멈추기 위해서 모든 감염이나 거의 근접한 감염을 막을 필요 없습니다!**
 
-It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
+역설적이죠. COVID-19는 전염성이 매우 높지만, 이겨내기 위해서는 "단지" 60% 이상의 감염만 막으면 됩니다. 60%?! 만약 그게 학교 성적이었다면, D-겠네요. 그러나 R<sub>0</sub> = 2.5인 경우, 61%로 줄이면 R = 0.975, R < 1이 됩니다. COVID-19를 이겨낸 것이죠! (공식:[^exact_formula])
 
-[^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
-    
-    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1. 
-    
-    Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
-    
-    Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
-    
-    Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
-    
-    Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
+[^exact_formula]:  R = R<sub>0</sub> * 감염병 전파율. 다시말해, 감염병 전파율 = 1 - 감염병 전파 *감쇠율*.
+
+    R < 1은 R<sub>0</sub> * 감염병 전파율 < 1 가 되어야 합니다.
+
+    감염병 전파율 < 1/R<sub>0</sub> 이며,
+
+    1 - 감염병 전파 감쇠율 < 1/R<sub>0</sub> 이며,
+
+    감염병 전파 감쇠율 > 1 - 1/R<sub>0</sub> 이며,
+
+    따라서, 바이러스를 막고 R < 1 위해서는 **1 - 1/R<sub>0</sub>** 이상의 확산을 멈춰야 합니다!
 
 ![](pics/r4.png)
 
-(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
+(시뮬레이션의 R<sub>0</sub>나 다른 수치가 낮거나/높다고 생각하신다면, 새로운 가정을 세워보세요! 이 안내서 끝에 "샌드박스 모드"가 있습니다. *당신이* 생각하시는 숫자와 그로인한 상황을 시뮬레이션해보세요.)
 
-*Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
+*모든* COVID-19 예방조치나 추가적인 조치는 - 손 씻기, 사회적/물리적 거리두기, 락다운, 자가 격리, 동선 추적, 쿼런틴, 마스크, "집단면역"도 포함 - *전부* 한 가지 목적을 이루기 위함입니다:
 
-Getting R < 1.
+R < 1 되는 것을 목표로 합니다.
 
-So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
+자, 이제 우리의 "전염병 시뮬레이터"를 통해 알아봅시다: 어떻게 하면 **정신건강 *그리고* 재정건강을 지키면서** R < 1을 이룰 수 있을까요?
 
-Brace yourselves for an emergency landing...
+비상착륙을 위해 준비하세요...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Months</div>
+        <div>다음 몇 달</div>
     </div>
 </div>
 
@@ -250,7 +249,7 @@ Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Car
 
 [^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400.
 
 Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
 
@@ -260,7 +259,7 @@ Even if we *more than tripled* that capacity to 2%, here's what would've happene
 
 Not good.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
+That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected.
 (remember: total cases *overshoots* herd immunity)
 
 Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
@@ -272,7 +271,7 @@ Even if only 0.5% of infected die – a generous assumption when there's no more
 The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
 
 [^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
-    
+
     From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
 Both plans, though, had a literally fatal flaw.
@@ -366,9 +365,9 @@ But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **a
 To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
 
 [^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
-    
+
     **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
-    
+
     **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
@@ -418,15 +417,15 @@ But what about folks without smartphones? Or infections through doorknobs? Or "t
 (Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
 
 [^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
-   
+
     Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
-    
+
     So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
 
 Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
 
 [^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
-    
+
     * Symptomatics contribute R = 0.8 (40%)
     * Pre-symptomatics contribute R = 0.9 (45%)
     * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
@@ -514,10 +513,10 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
 [^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
 
    **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
-   
+
    **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
-    
-    
+
+
 
 Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 2/3 of people wear *cloth* masks would tip that over to R < 1, virus contained!
 
@@ -561,7 +560,7 @@ Not to mention all the *other* interventions we could do, to further push R down
 
 . . .
 
-We hope these plans give you hope. 
+We hope these plans give you hope.
 
 **Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
 
@@ -595,7 +594,7 @@ But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
 
 [^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
+[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later.
 
 For these simulations, let's say it's 1 year.
 **Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
@@ -642,7 +641,7 @@ But here's the scarier question:
 
 What if there's no vaccine for *years*? Or *ever?*
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment. 
+**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment.
 
 Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
 
@@ -703,7 +702,7 @@ So what does this mean for YOU, right now?
 
 **For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
 
-**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. 
+**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope.
 
 Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
 
