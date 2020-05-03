@@ -210,17 +210,17 @@ COVID-19의 R<sub>0</sub>은 약 2.2명으로 추정했습니다.[^r0_covid] 하
 
 역설적이죠. COVID-19는 전염성이 매우 높지만, 이겨내기 위해서는 "단지" 60% 이상의 감염만 막으면 됩니다. 60%?! 만약 그게 학교 성적이었다면, D-겠네요. 그러나 R<sub>0</sub> = 2.5인 경우, 61%로 줄이면 R = 0.975, R < 1이 됩니다. COVID-19를 이겨낸 것이죠! (공식:[^exact_formula])
 
-[^exact_formula]:  R = R<sub>0</sub> * 감염병 전파율. 다시말해, 감염병 전파율 = 1 - 감염병 전파 *감쇠율*.
+[^exact_formula]:  R = R<sub>0</sub> * 감염병 전파율. 다시말해, 감염병 전파율 = 1 - 감염병 *감소율*.
 
     R < 1은 R<sub>0</sub> * 감염병 전파율 < 1 가 되어야 합니다.
 
     감염병 전파율 < 1/R<sub>0</sub> 이며,
 
-    1 - 감염병 전파 감쇠율 < 1/R<sub>0</sub> 이며,
+    1 - 감염병 감소율 < 1/R<sub>0</sub> 이며,
 
-    감염병 전파 감쇠율 > 1 - 1/R<sub>0</sub> 이며,
+    감염병 감소율 > 1 - 1/R<sub>0</sub> 이며,
 
-    따라서, 바이러스를 막고 R < 1 위해서는 **1 - 1/R<sub>0</sub>** 이상의 확산을 멈춰야 합니다!
+    따라서, 바이러스를 막고 R < 1 되기 위해서는 **1 - 1/R<sub>0</sub>** 이상의 확산을 멈춰야 합니다!
 
 ![](pics/r4.png)
 
@@ -232,7 +232,7 @@ R < 1 되는 것을 목표로 합니다.
 
 자, 이제 우리의 "전염병 시뮬레이터"를 통해 알아봅시다: 어떻게 하면 **정신건강 *그리고* 재정건강을 지키면서** R < 1을 이룰 수 있을까요?
 
-비상착륙을 위해 준비하세요...
+비상착륙을 위해 마음의 준비하세요...
 
 <div class="section chapter">
     <div>
@@ -241,78 +241,78 @@ R < 1 되는 것을 목표로 합니다.
     </div>
 </div>
 
-...could have been worse. Here's a parallel universe we avoided:
+...더 끔찍했을 수도 있었습니다. 우리가 피한 평행 우주는 이렇습니다:
 
-###Scenario 0: Do Absolutely Nothing
+###시나리오 0: 아무것도 하지 않았을 경우
 
-Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니다. [^icu_covid] 미국과 같은 부유한 나라에서는 3400명당 1 개의 중환자실 병상이 있습니다.[^icu_us] 그러므로, 미국은 *동시에* 3400명당 20명, 즉 인구의 0.6%를 수용할 수 있습니다.
 
-[^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
+[^icu_covid]: ["2020년 2월 12일부터 3월 16일까지 중환자실 입원이 필요한 미국 COVID-19 연령별 사례 비율"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). *모든* COVID-19 사례 중 4.9% ~ 11.5%가 중환자실 입원이 필요했습니다. 낮은 연령대의 경우, 5% 였고 20명당 1명이었습니다. 이 총 사례는 미국의 연령 구조에 따른 것이며, 높은 연령대의 인구가 많은 나라에서는 높을 것이고 낮은 연령대의 인구가 많은 나라에서는 낮을 것입니다.
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400.
+[^icu_us]: “중환자실 병상 수 = 96,596”. [중환자의학회](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) 2009년 미국 인구는 약 328,200,000명이었습니다. 328,200,000명당 96,596개의 병실 = 약 3400명당 1개의 병실입니다.
 
-Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
+*3배 이상* 늘어나서 2%까지 수용해도, *아무것도 하지 않았을 경우*는 이렇습니다.:*
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
-Not good.
+좋지 않습니다.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected.
-(remember: total cases *overshoots* herd immunity)
+ [3월 16일 임페리얼 칼리지 보고서](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/)에 따르면: 아무것도 하지 않았을 경우, 중환자실 병실이 현저히 부족하고 인구의 80%가 감염될 것으로 예측했습니다.
+(참고: 총 사례가 집단면역을 했을 때 *계속 증가했습니다*)
 
-Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+감염군 0.5%만 사망한다고 해도 - 중환자실이 없을때 가정한 수치 - 미국처럼 큰 나라는 감염된 80%의 0.5%가 사망하면 120만명이나 되는 인구가 사망한 것입니다... *아무것도 하지않았을 때는요.*
 
-(Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
+(많은 뉴스와 소셜 미디어는 "우리가 아무것도 하지 않았다는* 전제를 *제외하고* "80%가 감염될 것"이라고 보도했습니다. 두려움은 이해가 아닌 클릭으로 이어졌습니다. *아이고.*)
 
-###Scenario 1: Flatten The Curve / Herd Immunity
+###시나리오 1: 역학 곡선을 평평하게 / 집단면역
 
-The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+모든 공중 보건 기구가 "역학 곡선을 평평하게" 한다는 계획을 내세웠고, 영국의 "집단면역" 전략은 전세계적으로 야유받았습니다. 하지만 *같은 계획입니다.* 영국은 잘못 선전한 것이었죠.[^yong]
 
-[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
+[^yong]: “실제 목표는 다른 국가의 목표와 같다고 말했습니다: 감염의 악순환을 저지해서 역학 곡선을 평평하게 만드는 것입니다. 그로인해 집단면역을 달성할 수 있게 됩니다. 집단면역은 목표가 아니라 부가적으로 이뤄지는 것이며 [...] 온라인으로 제공된 정부의 코로나 바이러스 행동 계획서에는 집단면역이 언급되지 않았습니다.”
 
-    From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+    [더 아틀란틱 기사, 에드 용 기자](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
-Both plans, though, had a literally fatal flaw.
+그러나 두 계획 모두 치명적인 결함이 있었습니다.
 
-First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
+먼저, "곡선을 평평하게"하는 두 가지 주요 방법을 살펴 봅시다: 손 씻기 & 물리적 거리두기.
 
-Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+고소득 국가에서 손 씻는 비율이 증가했을때 일반 감기와 독감 발생률이 25%가 감소한 반면에[^handwashing], 대도시 락다운이 내려진 런던의 경우 ~70%까지 감소하였습니다[^london]. 따라서, 손 씻기가 R의 수치를 25%*까지* 감소시키고 거리두기가 R의 수치를 70%*까지* 감소시켰다고 가정해봅시다:
 
-[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
+[^handwashing]: “모든 8개의 연구에 따르면, 손 씻기로 호흡기 감염의 위험이 6% 에서 44%까지 감소한 것으로 나타났습니다 [합동분산 24% (95% CI 6–40%)].” 이 시뮬레이션에서는 단순화를 위해 합동분산편차를 25%로 반올림하였습니다. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) 참고: 이 메타 분석에서 집었듯이, 손 씻기에 대한 연구는 (적어도 고소득 국가에서) 제대로 이뤄지지 않았습니다.
 
-[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: “피실험자의 평균 일일 접촉 대상의 수는 73% 감소한 것으로 나타났습니다. 이는 R0이 락다운 전 2.6에서 락다운 후 0.62 (0.37 - 0.89)까지 떨어지기에 충분했습니다”. 이 시뮬레이션에서는 단순화를 위해 70% 감소로 반올림하였습니다. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**이 계산기를 사용하여 몇 %의 <icon s></icon> 감염대상군이 아닌 사람들이 손 씻기와 거리두기를 했을때 R을 감소시키는지 확인하세요:** (이 계산기는 *상대적* 효과를 시각화한 것으로, 하나의 효과가 다른 효과를 감소시키는 것처럼 *보입니다.*[^log_caveat])
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+[^log_caveat]: R을 로그 배율로 적용하면 이 왜곡현상이 없어질 것입니다... 그러면 *로그 배율* 설명해야합니다.
 
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
+자, 2020년 3월부터 손 씻는 비율이 증가했다고 가정해보면 어떻게 되는지 시뮬레이션 해봅시다. 3월부터 손 씻는 비율이 증가했고 *가벼운* 물리적 거리두기만 했다고 하면 - R은 감소하지만 여전히 1보다는 높습니다:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
+세가지 결론:
 
-1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1. 총 사례가 *감소합니다*! **R < 1는 않았지만, R이 감소하면 여전히 생명을 구할 수 있고, 집단면역의 '계속 증가하는' 현상을 줄입니다.** 많은 사람들은 "역학 곡선을 평평하게"하면 총 사례를 줄이지 않고 퍼뜨린다고 생각합니다. 이것은 *어떠한* 전염병개론에 나오는 모형에서는 불가능 합니다. 그러나 뉴스가 "80% 이상의 사람이 감염될" 것으로 보고했기 때문에 사람들은 총 사례가 무엇이든 상관없이 동일하다고 믿는 것입니다. *에휴.*
 
-2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2. 추가적인 조치로 인해, 현재 사례는 집단면역이 이뤄지기 *전에* 최고점에 도달합니다. 실제로 이 시뮬레이션에서 총 사례는 영국의 집단면역 계획보다 *아주 약간* 증가합니다. 그 시점에서 R < 1, 다른 조치를 하지않아도 COVID-19를 이겨냅니다. 음, 한 가지 문제를 제외하고서요...
 
-3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3. 여전히 중환자실에 병실이 부족합니다. 몇 달 동안이나. (이 시뮬레이션에서 이미 *3배나* 중환자실을 늘렸다고 가정한 것을 기억하세요.)
 
-That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+3월 16일 임페리얼 칼리지 보고서에 따르면, 영국이 원래 계획을 포기하게 한 또 다른 발견이 있습니다. **완화**(R 감소, R < 1) 시도는 실패할 것이고, 유일한 방법은 **억제** 시도입니다 (R 감소, R < 1).
 
 ![](pics/mitigation_vs_suppression.png)
 
-That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
+즉, 단순히 곡선을 "평평하게" 만들지 말고, *부셔야* 합니다. 예를 들어...
 
-###Scenario 2: Months-Long Lockdown
+###시나리오 2: 몇 달에 걸친 락다운
 
 Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
 
