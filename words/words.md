@@ -155,44 +155,45 @@ COVID-19는 <icon e></icon> *평균적으로* [^latent] 3일 동안 감염되었
 
 ![](pics/r.png)
 
-"감염재생산수"의 줄임말입니다. <icon i></icon>감염군이 회복 (혹은 사망 전에) 감염시키는 *평균* 사람들의 수입니다.
+Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
 
 ![](pics/r2.png)
 
-**R**은 면역과 개입 방법이 늘어남이 따라 변화합니다.
+**R** changes over the course of an outbreak, as we get more immunity & interventions.
 
-**R<sub>0</sub>** (R-nought으로 발음)은 *면역 또는 개입 전에 발병한 시점입니다*. R<sub>0</sub>은 바이러스의 자체의 힘을 더 자세히 반영하지만 장소마다 다릅니다. 예를 들어, R<sub>0</sub>은 시골 지역보다 도시 지역에서 더 높습니다.
+**R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
 
-(대부분의 뉴스 기사 및 일부 연구 논문에서 R과 R<sub>0</sub>를 혼동 합니다! 용어가 좀 헷갈리죠.)
+(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
 
-"그" 계절 독감의 R<sub>0</sub>은 약 1.28[^r0_flu]입니다. 그 말은, 독감 시즌이 *시작될 때* <icon i></icon> 감염군이 *평균적으로* 1.28명을 감염시키는 것입니다. (이 숫자가 정수가 아닌 것이 이상하시면, 엄마들이 "평균" 2.4명의 자녀를 가진다는 것을 생각해보세요. 반명의 아이가 있다는 얘기가 아닙니다.)
+The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
 
-[^r0_flu]: “계절 독감의 평균 R값은 1.28명입니다. (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
-COVID-19의 R<sub>0</sub>은 약 2.2명으로 추정했습니다.[^r0_covid] 하지만 *아직 진행되고 있는* 한 연구는 우한에서 5.7(!)명이라고 추정했습니다.[^r0_wuhan]
+[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
-[^r0_covid]: “2019-nCoV의 R0 기초감염재생산수가 약 2.2명으로 추정합니다. (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
 
-[^r0_wuhan]: “평균 R0가 약 5.7명으로 추청합니다. (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
+[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
-시뮬레이션은 *시작과 평균적으로* <icon i></icon> 감염군이 4일마다, 10일 동안 감염시킵니다. "10일"을 "4일"로 나누면 2.5가 됩니다. 이것은 *시작과 평균적으로* 각각의 <icon i></icon> 감염군이 다른 2.5명을 감염시킨다는 말입니다. 따라서, R<sub>0</sub> = 2.5. (주의 사항:[^r0_caveats_sim])
+[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-[^r0_caveats_sim]: "감염된 기간" 내내 똑같은 점염성이 있다고 가정했습니다. 역시 교육 목적을 위해 단순화했습니다.
+In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
 
-**R<sub>0</sub> 계산기를 이용하여 R<sub>0</sub>가 회복 시간과 새로운 감염까지 걸리는 시간에 어떻게 영향을 미치는지 확인하세요:**
+[^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
+
+**Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-하지만 명심하세요. <icon s></icon> 감염대상군이 적을수록, <icon s></icon> 감염대상군이 <icon i></icon>로 *느리게* 감염됩니다. *현재* 감염재생산수 (R)는 *기초* 감염재생산수 (R<sub>0</sub>) 뿐만 아니라, *또한* 얼마나 사람들이 <icon s></icon> 감염대상군에 속하지 않는지도 포함합니다. (예를 들어, 자연면역으로 회복하게 되는 경우를 말합니다.)
+But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-집단의 대부분이 면역력을 가졌으면, R < 1이며 방역이 이뤄집니다! 이것이 바로 **집단면역*이라고 합니다*. 독감의 경우 *백신으로* 집단면역이 이뤄집니다. 사람들이 감염되도록 방임하여 "자연적으로 집단면역"을 이룬다는 전략은 *끔찍한* 생각입니다. (그러나 생각하시는 이유 때문은 아닐겁니다! 나중에 설명하겠습니다.)
+When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
 
-이제 SEIR 모형을 R<sub>0</sub>를 포함해 다시 해봅시다, 시간에 따른 R과 집단면역 임계점을 확인해보세요:
+Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
