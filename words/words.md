@@ -50,7 +50,7 @@
 
 **전염병학자들은 인류를 돕기 위해 전염병 시뮬레이터를 사용합니다.**
 
-자, 아주 *아주* 간단한 "전염병 시뮬레이터" 입니다! 이 시뮬레이션에서 <icon i></icon> 감염군은 <icon s></icon> 감염 대상군을 <icon i></icon> 감염시킬 수 있습니다:
+자, 아주 *아주* 간단한 "전염병 비행 시뮬레이터" 입니다! 이 시뮬레이션에서 <icon i></icon> 감염군은 <icon s></icon> 감염 대상군을 <icon i></icon> 감염시킬 수 있습니다:
 
 ![](pics/spread.png)
 
@@ -468,59 +468,59 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 
 
 비관주의자는 낙하산을 발명해야 합니다.
 
-###시나리오 4+: Masks For All, Summer, Circuit Breakers
+###시나리오 4+: 모두를 위한 마스크, 여름, 서킷 브레이커
 
-What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
+만약 R<sub>0</sub>값이 우리가 생각한 것보다 더 높으면, 여러 조치에도, 가벼운 거리두기에도, *그래도 여전히* R < 1을 이뤄낼수 없으면 어떻게 하죠?
 
-Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
+명심하세요. 우리가 R < 1 달성하지 못해도, R값이 감소하면 총 사례가 "멈추지 않고 계속 증가하는" 것은 막을 수 있어요. 따라서, 여러 생명을 구할 수 있겠죠. 하지만, R < 1 이 이상적이죠. R을 감소시킬만한 다른 방도입니다:
 
-**Masks For All:**
+**모두를 위한 마스크:**
 
-*"Wait,"* you might ask, *"I thought face masks don't stop you from getting sick?"*
+*"잠깐만,얼굴 마스크는 병에 걸리는 걸 막지 못하는 줄 알았는데?"* 하고 의아해 하실 수 있습니다.
 
-You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
+맞아요. 마스크는 당신이 병 걸리는 것을 막지 않아요[^incoming]... *다른 사람들이* 아프지 않게 막아주죠.
 
-[^incoming]: “None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
+[^incoming]: “수술용 마스크 중에 호홉기 보호 장치에 맞는 필터 성능과 안면 맞춤이 되는 것은 없다.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
-[^outgoing]: “The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+[^outgoing]: “감염군이 수술용 마스크를 올바르게 착용했을때 전반적으로 에어로졸 유전자 복제수(Copy Number)가 3.4배 감소[70% 감소] 했고, 존슨 등(2009)은 큰 물방울의 확산을 예방하는데 임상적으로 효과적이라고 평가했다.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
-[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
+[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) 표1: 100% 면 티셔츠는 박테리아 에어로졸에 수술용 마스크의 약 2/3의 필터 효과를 보였다.
 
 ![](pics/masks.png)
 
-To put a number on it: surgical masks *on the sick person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
+수로 얘기해봅시다: *환자가* 수술용 마스크를 착용했을때 감기와 독감 바이러스 에어로졸의 확산이 70%까지 감소하였습니다.[^outgoing] 전염률을 70%까지 감소하면 락다운 효과와 같습니다!
 
-However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+하지만, 마스크가 COVID-19에 *구체적으로* 미치는 영향을 확실히 알지 못합니다. 과학세계에서는 95%의 신뢰가 있으면 연구 결과를 발표합니다. (...신뢰하면요.[^replication]) 2020년 5월 1일자 기준, 마스크의 "신뢰수준은 95%보다 낮습니다".
 
-[^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
+[^replication]: 아마 과학자라면 마지막 문장을 읽고 지금 눈물흘리며 웃음을 터트릴겁니다. 참고: [p-해킹](https://en.wikipedia.org/wiki/Data_dredging), [재현성 위기](https://en.wikipedia.org/wiki/Replication_crisis))
 
-However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
+그러나, 팬데믹은 포커와 같습니다. **95% 확실할 때 내기를 하면, 모든 것을 위태롭게 할 겁니다.** 영국 의학 논문에 실린 마스크에 관한 최근 기사에서,[^precautionary] 불확실한 상황에서 비용과 편익 분석을 *해야 한다고* 했습니다. 그러니까:
 
-[^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
+[^precautionary]: “예방 원칙을 적용할 때다.” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: If homemade cloth masks, same as the cost of all that soap for handwashing. If surgical masks, more expensive but still pretty cheap.
+비용: 집에서 만든 천 마스크라면, 손 씻는 데 드는 비누의 비용과 같습니다. 수술용 마스크라면 더 비싸지만 그래도 꽤 쌉니다.
 
-Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%. (Again, you can challenge our assumptions by turning the sliders up/down)
+편익: 수술용 마스크가 50 대 50의 확률로 전파율이 0% 혹은 70% 감소하는데, 평균 "기대치"가 35%이므로, 락다운에 반 이나 되는 셈입니다! 그러니까 수술용 마스크가 R를 35%나 감소시킨다고 해봅시다. (슬라이더를 위/아래로 움직여 새로운 가정을 세울 수 있습니다)
 
-**Here's a calculator of how masks reduce R! You can switch between cloth & surgical:** (assumes cloth masks are 2/3 as effective as surgical masks[^homemade])
+**마스크가 R을 어떻게 감소시키는 보여주는 계산기가 있습니다! 천 마스크와 수술용 마스크를 바꿔가면서 시뮬레이션 하실 수 있습니다:** (천 마스크가 수술용 마스크보다 2/3만큼 효과적이라고 가정합니다[^homemade])
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
 
-(other arguments for/against masks:[^mask_args])
+(마스크에 대한 기타 주장:[^mask_args])
 
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
+[^mask_args]: **"병원을 위해서 물자를 아껴야 합니다."** *전적으로 동의합니다.* 하지만 배급이 아니라 마스크 생산을 늘려야 한다는 주장에 가깝습니다. 그동안 천 마스크를 만들 수 있습니다.
 
-   **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
+   **"제대로 착용하기 어렵습니다."** WHO 지침에 따라 손을 씻는 것도 어렵습니다, "3 단계: 오른쪽 손바닥을 왼쪽 손등위로 올린다"?! 하지만 여전히 손 씻기를 추천합니다. 왜냐하면 완벽하지 않아도 아예 안하는 것보다 낫기 때문입니다.
 
-   **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
+   **"손 씻기나 사회적 거리두기가 잘 지켜지지 않을 겁니다."** 그래요, 그럼 안전벨트는 사람들로 하여금 정지 표시판을 무시하게 하고, 치실은 바위를 먹게 만들겠네요. 하지만 정말로, 그에 반대예요. 마스크는 조심하라는 *물리적 알림* 이죠. 그리고 동아시아세는 마스크는 연대의 상징이고요!
 
 
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 2/3 of people wear *cloth* masks would tip that over to R < 1, virus contained!
+*오직* 마스크만 쓴다고 R < 1를 만들 수 없어요. 손 씻기와 "검사, 추적, 격리"가 같이 이뤄질 때 R = 1.10가 될 수 있어요. 인구의 2/3가 *천* 마스크를 쓰면 R < 1로 넘어가게 될 거에요. 바이러스는 종식이죠!
 
-**Summer:**
+**여름:**
 
 Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
 
@@ -534,7 +534,7 @@ For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^
 
 Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
 
-**A "Circuit Breaker" Lockdown:**
+**"서킷 브레이커" 락다운:**
 
 And if all that *still* isn't enough to get R < 1... we can do another lockdown.
 
