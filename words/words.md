@@ -280,7 +280,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
 고소득 국가에서 손 씻는 비율이 증가했을때 일반 감기와 독감 발생률이 25%가 감소한 반면에[^handwashing], 대도시 락다운이 내려진 런던의 경우 ~70%까지 감소하였습니다[^london]. 따라서, 손 씻기가 R의 수치를 25%*까지* 감소시키고 거리두기가 R의 수치를 70%*까지* 감소시켰다고 가정해봅시다:
 
-[^handwashing]: “모든 8개의 연구에 따르면, 손 씻기로 호흡기 감염의 위험이 6% 에서 44%까지 감소한 것으로 나타났습니다 [합동분산 24% (95% CI 6–40%)].” 이 시뮬레이션에서는 단순화를 위해 합동분산편차를 25%로 반올림하였습니다. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) 참고: 이 메타 분석에서 집었듯이, 손 씻기에 대한 연구는 (적어도 고소득 국가에서) 제대로 이뤄지지 않았습니다.
+[^handwashing]: “모든 8개의 연구에 따르면, 손 씻기로 호흡기 감염의 위험이 6% 에서 44%까지 감소한 것으로 나타났습니다 [합동분산 24% (95% CI 6–40%)].” 이 시뮬레이션에서는 단순화를 위해 합동분산편차를 25%로 반올림하였습니다. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) 참고: 이 메타 분석에서 짚었듯이, 손 씻기에 대한 연구는 (적어도 고소득 국가에서) 제대로 이뤄지지 않았습니다.
 
 [^london]: “피실험자의 평균 일일 접촉 대상의 수는 73% 감소한 것으로 나타났습니다. 이는 R0이 락다운 전 2.6에서 락다운 후 0.62 (0.37 - 0.89)까지 떨어지기에 충분했습니다”. 이 시뮬레이션에서는 단순화를 위해 70% 감소로 반올림하였습니다. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
@@ -314,111 +314,111 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
 ###시나리오 2: 몇 달에 걸친 락다운
 
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+5개월에 걸친 락다운으로 역학 곡선을 *부시고* <icon i></icon>감염군이 거의 남아있지 않고, 드디어 – *드디어* – 정상적인 삶으로 돌아가는지 봅시다:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 
-Oh.
+아.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+이것이 흔히 말하는 "두번째 유행"입니다. 락다운을 헤졔하자마자, R > 1이 됩니다. 따라서, 완치되지 않은 <icon i></icon> 감염군 (아니면 유입된 <icon i></icon> 감염군)이 있는 한, 사례가 다시 재발되고 시나리오 0: 아무것도 하지 않았을 때와 비슷한 양상을 보일 것입니다.
 
-**A lockdown isn't a cure, it's just a restart.**
+**락다운은 치료법이 아니라 다시 시작하는 것입니다.**
 
-So, what, do we just lockdown again & again?
+그러면, 락다운을 계속하고 또 해야할까요?
 
-###Scenario 3: Intermittent Lockdown
+###시나리오 3: 간혈적 락다운
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+3월 16일 임페리얼 칼리지 보고서와 추후 하버드대 신문에서 제시된 방법입니다.[^lockdown_harvard]
 
-[^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
+[^lockdown_harvard]: “다른 조치가 없으면, 사회적 거리두기의 핵심 지표는 중환자실 수용력을 초과하는지 여부입니다. 이를 피하기 위해서는 2022년까지 장기간 또는 간혈적인 사회적 거리두기가 필요할 수 있습니다.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**여기 시뮬레이션을 해봅시다:** ("정해진 시나리오"를 해보신 후에는 시뮬레이션이 *진행되는 동안* 슬라이드 바를 이용해 *자체* 락다운 기간으로 시뮬레이션 해보세요! 시뮬레이션을 일시 정지, 계속, 속도 변경하실 수 있음을 명심하세요.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+이 경우 중환자실 수용력 미만으로 *유지할* 수 있습니다! 그리고 백신이 만들어질때까지 18개월동안 락다운하는 것보다 *훨씬* 낫습니다. 우리는... 몇 달간 락다운하고, 몇 달동안 열고, 백신이 개발될때까지 반복하면 됩니다. (그리고 백신이 없다면, 2022년에... 집단면역에 도달할 때까지 반복하면 됩니다.)
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+"중환자실 수용력"이라고 기준을 정하는 것도 좋지만, 시뮬레이션에 포함할 수 *없는* 중요한 것들이 많이 있습니다. 얘를 들어:
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**정신 건강:** 외로움은 우울증, 불안 및 자살의 가장 큰 위험 요소 중 하나입니다. 그리고 하루의 담배 15 개피를 피우는 것과 같이 조기 사망에 관련있습니다.[^loneliness]
 
-[^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
+[^loneliness]: 참고 [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). 물론, 중요한 고지 사항은 인과관계가 아닌 "상관관계"라는 것입니다. 그러나 연구를 위해 무작위로 피실험자들을 평생동안 외롭도록 할당할 수 없는 한, 관측 증거만 있습니다.
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**재정 건강:** "경제는 어떻습니까"는 생명보다 돈에 더 걱정하는 것처럼 들리지만, "경제"는 단순히 주식을 의미하지 않습니다. 사랑하는 사람들에게 음식과 지붕을 제공할 수 있는 능력과 자녀들의 미래와 예술, 음식, 비디오 게임, 우리 인생을 즐길 수 있는 여유입니다. 게다가, 가난은 심신 건강에 안 좋은 영향을 미칩니다.
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+우리가 다시 락다운 하지 *말아야* 한다는 말은 아닙니다! 나중에 락다운으로 인한 "서킷 브레이커"에 대해 자세히 살펴봅시다. 그래도 이상적이지 않습니다.
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
+잠시만요... 한국과 대만은 *이미* 성공적으로 방역했다고요? 4개월 동안 장기적 봉쇄 *없이요*?
 
-How?
+어떻게 한 거죠?
 
-###Scenario 4: Test, Trace, Isolate
+###시나리오 4: 검사, 추적, 격리
 
-*"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+*"물론, 처음에 한국과 대만이 \*했던 것처럼\* 할 수 있었지만, 지금은 너무 늦었어요. 시작을 놓쳤습니다."*
 
-But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
+바로 그거에요! “락다운은 치료법이 아니라 다시 시작하는 것입니다”... **새로운 시작이 우리에게 필요한 것이죠.**
 
-To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
+한국과 대만이 어떻게 방역할 수 있었는지 이해하려면, COVID-19 감염의 타임라인을 알아야 합니다[^timeline]:
 
-[^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
+[^timeline]: **감염까지 평균 3일:** “초기 COVID-19 사례의 연구에서 평균 잠복기가 5.2일이라고 가정했을때, 증상이 나타나기 2.3일전에 (95% CI, 0.8–3.0 days) 발병하는 것으로 추정하였다. (번역: 증상이 5일째 나타난다고 가정했을때, 2일전에 발병 = 3일째 발병) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
 
-    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+    **전염시키는 데 평균 4일:** “평균 [연속] 기간은 3.96일로 추정된다. (95% CI 3.53–4.39일)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
 
-    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    **증상이 나타나기까지 평균 5일:** “평균 잠복기는 5.1일로 추정된다. (95% CI, 4.5 to 5.8일)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
-If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
+아플때 (증상이 나타날때) 자가 격리한 경우에도 바이러스는 전파될 수 있습니다:
 
 ![](pics/timeline2.png)
 
-And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+실제로 44%의 모든 전염은: 증상이 나타나기 *전에* 이뤄졌습니다! [^pre_symp]
 
-[^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: “해당 그룹 내 첫 번째로 확인된 감염군의 44%의 (95% CI, 25–69%) 2차 사례는 잠복기 단계때 전파된 것으로 추정된다.” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
-But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
+하지만 감염원을 조기발견하고 접촉자를 *격리* 한다면... 전파를 차단하고 추가 발생을 예방할 수 있습니다!
 
 ![](pics/timeline3.png)
 
-This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
+이것을 **역학 조사** 라고 합니다. 역학 조사는 예전 에볼라[^ebola]가 유행할 당시에도 시행되었고, 한국과 대만이 방역에 성공적이었던 이유입니다!
 
-[^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
+[^ebola]: “역학 조사는 라이베리아에서 중요한 조치였고 그 규모는 역사상 가장 큰 축에 속한다.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)
+(제한적인 검사를 효율적으로 진행하고 모든 사람들을 검사할 필요없이 무증상 단계의 <icon i></icon>감염군도 찾을 수 있습니다.)
 
-Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
+예전에는 면접조사 또는 설문조사로 대면하여 이뤄졌었는데, *그것만으로는* COVID-19의 48시간내에 이뤄질 수 없습니다. 따라서 역학조사관 업무가 폭증하자, 대신하는 것이 *아닌*, 이를 지원할 역학 조사 어플이 필요합니다.
 
-(This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
+(이 아이디어는 "기술 전문가"에서 나온 것이 아니었다: COVID-19를 종식할 역학 조사 어플 아이디어는 [전염병 학자들 제시한 것이다](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
-Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+잠깐만요, 누구와 접촉했는지 추적하는 앱이요?... 개인 사생활을 빅 브라더에게 포기하라는 말인가요?
 
-Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
+절대 아닙니다! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, 전염병 학자 및 암호학자로 구성된 팀 (마르셀 살라테 포함) *이미* 역학 조사 어플을 개발 중입니다. 모두가 사용할 수 있는 코드는 **귀하의 신원, 위치, 연락처, *얼마나 많은 접촉*을 했는지** 같은 정보는 포함하지 않습니다.
 
-Here's how it works:
+그 방법은 다음과 같습니다:
 
 ![](pics/dp3t.png)
 
 (& [here's the full comic](https://ncase.me/contact-tracing/))
 
-Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
+TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 정보 보호 우선 역학 조사를 안드로이드/iOS에 직접 적용하도록 애플과 구글에게 영감을 주었습니다.[^gapple] (구글과 애플을 믿지 않으세요? 잘됐네요! 이 시스템은 굳이 *신뢰할* 필요가 없어요!) 곧, 지역 공공 보건 기관에서 앱을 설치하도록 요청할지도 모릅니다. 공개 가능한 코드로 개인 정보 보호가 우선된 어플이면, 그렇게 하세요!
 
-[^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
+[^tcn]: [임시 연락 번호, 비밀분산 개인 정보 보호 우선 역학 조사 프로토콜](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
-[^pact]: [PACT: Private Automated Contact Tracing](https://pact.mit.edu/)
+[^pact]: [PACT: 개인 자동 역학 조사](https://pact.mit.edu/)
 
-[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
+[^gapple]: [애플과 구글과 COVID-19 역학 조사 기술 분야 제휴](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). 참고로 애플과 구글은 어플을 *만든* 것이 아니라, 그런 앱을 *지원하는* 시스템을 구축했다.
 
-But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+하지만 스마트폰이 없는 사람들은 어떻게 할까요? 아니면 문 손잡이를 통한 감염은요? 그게 아니면 "무"증상 사례는요? 역학 조사 앱으로 모든 전염을 알아낼 수 없지만... *그래도 괜찮아요!* 우리는 *모든* 상황이 아닌 60% 이상만 차단해도 R < 1를 이룰 수 있습니다.
 
-(Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
+(잠복기 감염 vs "무증상" 감염에 대한 고찰. "무증상" 감염은 매우 희귀합니다:[^rant])
 
-[^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
+[^rant]: 많은 뉴스 보도에서 - 그리고 솔직히 많은 연구 논문에서도 - "검사할 때 증상이 나타나지 않은 경우" (잠복기 감염)과 "증상이 *아예* 없는 경우" (무증상 감염)를 구분하지 않고 있습니다. 구별할 수 있는 유일한 방범은 나중에 사례를 추적하는 것입니다.
 
-    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    그게 바로 [연구 논문](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) 한 것입니다. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
 
     So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
 
@@ -706,4 +706,4 @@ So what does this mean for YOU, right now?
 
 Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
 
-우리가 두려워해야 할 것은 오직 두려움 그 자체라는 생각이다.
+우리가 두려워해야 할 것은 오직 두려움 그 자체라는 생각입니다.
