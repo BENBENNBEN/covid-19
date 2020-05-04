@@ -56,7 +56,7 @@
 
 *발생 초기에* COVID-19 바이러스는 *평균적으로* [^serial_interval] 4일마다 <icon i></icon>에서 <icon s></icon>로 전파되었습니다. (많은 변수가 있다는 것을 명심하세요.)
 
-[^serial_interval]: “평균 [연속] 기간은 3.96일입니다 (95% CI 3.53–4.39일)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (고지 사항: 초기 문서는 최종 버전으로 간주하지 않습니다)
+[^serial_interval]: “평균 [연속] 기간은 3.96일입니다 (95% CI 3.53–4.39일)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (고지 사항: 초기 문서는 최종 버전으로 간주하지 않습니다.)
 
 만약 인구의 0.001% <icon i></icon>가 "4일마다 2배씩 늘어나고" *아무것도 하지 않는다고* 가정한다면, 어떻게 될까요?
 
@@ -167,7 +167,7 @@ Short for "Reproduction number". It's the *average* number of people an <icon i>
 
 "그" 계절 독감의 R<sub>0</sub>은 약 1.28[^r0_flu]입니다. 그 말은, 독감 시즌이 *시작될 때* <icon i></icon> 감염군이 *평균적으로* 1.28명을 감염시키는 것입니다. (이 숫자가 정수가 아닌 것이 이상하시면, 엄마들이 "평균" 2.4명의 자녀를 가진다는 것을 생각해보세요. 반명의 아이가 있다는 얘기가 아닙니다.)
 
-[^r0_flu]: “계절 독감의 평균 R값은 1.28명입니다. (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+[^r0_flu]: “계절 독감의 평균 R값은 1.28명입니다. (사분범위: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 COVID-19의 R<sub>0</sub>은 약 2.2명으로 추정했습니다.[^r0_covid] 하지만 *아직 진행되고 있는* 한 연구는 우한에서 5.7(!)명이라고 추정했습니다.[^r0_wuhan]
 
 [^r0_covid]: “2019-nCoV의 R0 기초감염재생산수가 약 2.2명으로 추정합니다. (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
@@ -262,7 +262,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
  [3월 16일 임페리얼 칼리지 보고서](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/)에 따르면: 아무것도 하지 않았을 경우, 중환자실 병실이 현저히 부족하고 인구의 80%가 감염될 것으로 예측했습니다.
 (참고: 총 사례가 집단면역을 했을 때 *계속 증가했습니다*)
 
-감염군 0.5%만 사망한다고 해도 - 중환자실이 없을때 가정한 수치 - 미국처럼 큰 나라는 감염된 80%의 0.5%가 사망하면 120만명이나 되는 인구가 사망한 것입니다... *아무것도 하지않았을 때는요.*
+감염군 0.5%만 사망한다고 해도 - 중환자실 확보를 할 수 없을때 가정한 수치 - 미국처럼 큰 나라는 감염된 80%의 0.5%가 사망해도 120만명이나 되는 인구가 사망하게 됩니다... *아무것도 하지않았을 때는요.*
 
 (많은 뉴스와 소셜 미디어는 "우리가 아무것도 하지 않았다는* 전제를 *제외하고* "80%가 감염될 것"이라고 보도했습니다. 두려움은 이해가 아닌 클릭으로 이어졌습니다. *아이고.*)
 
@@ -402,7 +402,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
 ![](pics/dp3t.png)
 
-(& [here's the full comic](https://ncase.me/contact-tracing/))
+(& [전체 만화](https://ncase.me/contact-tracing/))
 
 TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 정보 보호 우선 역학 조사를 안드로이드/iOS에 직접 적용하도록 애플과 구글에게 영감을 주었습니다.[^gapple] (구글과 애플을 믿지 않으세요? 잘됐네요! 이 시스템은 굳이 *신뢰할* 필요가 없어요!) 곧, 지역 공공 보건 기관에서 앱을 설치하도록 요청할지도 모릅니다. 공개 가능한 코드로 개인 정보 보호가 우선된 어플이면, 그렇게 하세요!
 
@@ -416,59 +416,59 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 
 
 (잠복기 감염 vs "무증상" 감염에 대한 고찰. "무증상" 감염은 매우 희귀합니다:[^rant])
 
-[^rant]: 많은 뉴스 보도에서 - 그리고 솔직히 많은 연구 논문에서도 - "검사할 때 증상이 나타나지 않은 경우" (잠복기 감염)과 "증상이 *아예* 없는 경우" (무증상 감염)를 구분하지 않고 있습니다. 구별할 수 있는 유일한 방범은 나중에 사례를 추적하는 것입니다.
+[^rant]: 많은 뉴스 보도에서 - 그리고 솔직히 많은 연구 논문에서도 - "검사할 때 증상이 나타나지 않은 경우" (잠복기 감염)과 "증상이 *아예* 없는 경우" (무증상 감염)를 구분하지 않고 있습니다. 구별할 수 있는 유일한 방법은 사례를 추적하는 것입니다.
 
-    그게 바로 [연구 논문](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) 한 것입니다. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    그게 바로 [연구 논문](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) 한 것입니다. (고지 사항: "초기 문서는 최종 버전으로 간주하지 않습니다.") 한국 콜센터에서의 COVID-19 집단발병의 경우, "확진자 4명(1.9%)은 14일의 격리가 끝날 때까지 증상이 나타나지 않았고, 가족 중 2차 감염자가 한명도 없었습니다."
 
-    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
+    따라서 "무증상 감염"은 희귀하고 무증상 감염자에게서 전염되는 것은 더 가능성이 낮습니다!
 
-Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
+*증상이 있는* 감염자들을 격리했을때 R은 40%까지 감소하고, 역학적 연관이 있는 *잠복기/무증상* 감염자들을 격리했을때 할것으로 추정하였습니다:
 
-[^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
+[^oxford]: COVID-19에 대항하기 위해 앱을 처음 추천한 옥스퍼드 연구와 같은 보고서에 따르면: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) 도형 2. R<sub>0</sub> = 2.0 가정했을때, 연구 결과는 다음과 같았습니다:    
 
-    * Symptomatics contribute R = 0.8 (40%)
-    * Pre-symptomatics contribute R = 0.9 (45%)
-    * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-    * Environmental stuff like doorknobs contribute R = 0.2 (10%)
+    * 증상있는 환자 R = 0.8 (40%)
+    * 잠복기 환자 R = 0.9 (45%)
+    * 무증상 환자 R = 0.1 (5%, 불확실성때문에 훨씬 더 낮을 수도 있음)
+    * 문 손잡이 같은 환경적인 요인 R = 0.2 (10%)
 
-    And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
+    잠복기 환자와 무증상 환자를 합하면 (45% + 5%) R값은 50%입니다!
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
+그러므로, 100% 비접촉 격리없이도 R < 1를 이뤄낼 수 있습니다. *락다운 없이도!* 정신과 재정에 훨씬 더 좋은 것이죠. (자가격리/격리된 확진자들을 위해 *국가 지원이 필요합니다* – 진단 검사비 지원, 근로 보호, 유급휴가 지원, 등등. 여전히 간혈적 락다운보다 사회적 비용은 적을 것입니다.)
 
-We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
+백신이 개발될때까지 R < 1를 유지해야 합니다. <icon s></icon> 감염대상군이 <icon r></icon> 회복군으로 됩니다. *올바른* 집단면역은 이렇습니다:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+(참고: 이 계산기는 백신이 100% 효과있다고 가정합니다. 실제로는 백신 접종률을 *더* 늘려서 *자연스럽게* 집단 전체의 방역을 이뤄냅니다.)
 
-Okay, enough talk. Here's a simulation of:
+좋아요, 이제 얘기 말고 시뮬레이션을 해봅시다:
 
-1. A few-month lockdown, until we can...
-2. Switch to "Test, Trace, Isolate" until we can...
-3. Vaccinate enough people, which means...
-4. We win.
+1. 몇 달에 걸친 락다운...
+2. "검사, 추적, 격리"...
+3. 많은 백신 접종률...
+4. 우리 승리.
 
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-So that's it! That's how we make an emergency landing on this plane.
+바로 그겁니다! 그런 식으로 이 비행에서 긴급탈출하는 겁니다.
 
-That's how we beat COVID-19.
+그렇게 COVID-19가 종식합니다.
 
 ...
 
-But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
+하지만 일이 *그래도* 잘못되면 어쩌죠? 상황은 이미 끔찍하게 잘못되었어요. 이 두려움, 아주 좋아요! 두려움은 *백업 계획* 을 세울 힘을 주니까요.
 
-The pessimist invents the parachute.
+비관주의자는 낙하산을 발명해야 합니다.
 
-###Scenario 4+: Masks For All, Summer, Circuit Breakers
+###시나리오 4+: Masks For All, Summer, Circuit Breakers
 
 What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
 
