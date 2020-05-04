@@ -522,58 +522,58 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 
 
 **여름:**
 
-Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
+좋아요, 우리가 통제할 수 있는 "조치"는 아니지만, 도움이 될 겁니다! 일부 뉴스 매체는 여름이 COVID-19이 아무런 도움이 되지 않을 것이라고 보도했습니다. 반만 맞았습니다: 여름이라고 R < 1를 얻지 못하지만 R을 *감소시킬* 것입니다.
 
-For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 15°C (60°F), so summer will make R drop by 18%.
+COVID-19의 경우, 1°C마다 (2.2°F) R이 1.2% 감소합니다.[^heat] 뉴욕식의 여름과 겨울 온도차는 15°C (60°F) 입니다. 따라서 여름이되면 R이 18% 감소할 것입니다.
 
-[^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: “섭씨 1도 상승으로 [...] R이 0.0225 감소한다” 그리고 “100개 도시의 평균 R값은 1.83이다”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+여름만으로 R < 1이 되지 않습니다. 하지만 자원이 한정되어 있으면, 여름에 비축하고 겨울이 *더 많은* 조치를 취할 수 있습니다.
 
 **"서킷 브레이커" 락다운:**
 
-And if all that *still* isn't enough to get R < 1... we can do another lockdown.
+*여전히* R < 1를 얻기에 충분하지 않다면... 또 다시 락다운을 할 수 있습니다.
 
-But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
+그렇지만 2개월동안 문을 닫고 1개월동안 문을 여는 것을 반복할 필요없습니다! R이 감소하였기 때문에, 백신이 개발될때까지 한두번의 "서킷 브레이커" 락다운만 하면 됩니다. (싱가포르는 최근 4개월동안 COVID-19를 통제했음에도 ""불구하고" 서킷 브레이커 락다운을 실시했습니다. 실패가 아니고, 성공에 *필요한* 일입니다.)
 
-Here's a simulation a "lazy case" scenario:
+다음은 "게으른 경우" 시뮬레이션입니다:
 
-1. Lockdown, then
-2. A moderate amount of hygiene + "Test, Trace, Isolate" + *cloth* "Masks For All", then...
-3. One more "circuit breaker" lockdown before a vaccine's found.
+1. 락다운
+2. 적당한 위생 + "검사, 추적, 격리" + "모두에게 *천* 마스크", then...
+3. 백신이 발견되기 전까지 한번이상의 "서킷 브레이커" 락다운.
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
 
-Not to mention all the *other* interventions we could do, to further push R down:
+R을 더 낮추기 위한 *다른* 조치들은 말할 것도 없죠:
 
-* Travel restrictions/quarantines
-* Temperature checks at malls & schools
-* Deep-cleaning public spaces
-* [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
-* And all else human ingenuity shall bring
+* 여행 제한/입국 제한
+* 쇼핑몰 및 학교에서 온도 점검
+* 공공장소 방역
+* [손악수 대신 발악수](https://twitter.com/V_actually/status/1233785527788285953)
+* 그리고 모든 창의적인 조치
 
 . . .
 
-We hope these plans give you hope.
+이 계획들이 당신에게 희망을 주길 바랍니다.
 
-**Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+**비관적 시나리오에서도, 우리의 정신과 재정 건강을 보호하면서 DOVID-19를 종식시킬 수 있습니다.** 락다운 정책을 "리셋 버튼"으로 활용하고, 격리를 통해 R < 1를 만들고 + 개인 정보 보호 우선 역학 조사하고 + 모두가 *최소한* 천 마스크 착용하면... 보통 비스므리한 삶으로 돌아갈 수 있게 됩니다!
 
-Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
+물론 당신의 손이 건조해졌을 수도 있습니다. 그래도 만화책방에 데이트 상대를 초대할 수 있을 겁니다! 친구들과 흥행 위주 할리우드 오락물도 보러갈 수도 있죠. 도서관에 가서 열심히 *사는* 사람들을 구경 할 수도 있죠.
 
-Even under the worst-case scenario... life perseveres.
+최악의 경우일지라도... 인내하며 살면 됩니다.
 
-So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+자, 이제 *아주* 최악의 경우를 대비해봅시다. 해상 비상착륙 예정이니 구명조끼를 착용하시고 불빛을 따라 비상구로 대피하세요:
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>다음 몇 년</div>
     </div>
 </div>
 
