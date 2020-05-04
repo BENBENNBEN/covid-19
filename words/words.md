@@ -192,7 +192,7 @@ COVID-19의 R<sub>0</sub>은 약 2.2명으로 추정했습니다.[^r0_covid] 하
 
 집단의 대부분이 면역력을 가졌으면, R < 1이며 방역이 이뤄집니다! 이것이 바로 **집단면역*이라고 합니다*. 독감의 경우 *백신으로* 집단면역이 이뤄집니다. 사람들이 감염되도록 방임하여 "자연적으로 집단면역"을 이룬다는 전략은 *끔찍한* 생각입니다. (그러나 생각하시는 이유 때문은 아닐겁니다! 나중에 설명하겠습니다.)
 
-이제 SEIR 모형을 R<sub>0</sub>를 포함해 다시 해봅시다, 시간에 따른 R과 집단면역 임계값을 확인해보세요:
+이제 SEIR 모형을 R<sub>0</sub>를 포함해 다시 해봅시다, 시간에 따른 R과 집단면역 역치값을 확인해보세요:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
@@ -200,7 +200,7 @@ COVID-19의 R<sub>0</sub>은 약 2.2명으로 추정했습니다.[^r0_covid] 하
 
 **참고: 집단면역의 경우 총 사럐는 *멈추지 않고* 계속 증가합니다!** 그리고 현재 사례가 정점에 도달할때 *정확하게* 집단면역의 사례는 교차합니다. (설정값에 관계없이 발생합니다. 직접 시도해보세요!)
 
-<icon s></icon> 감염대상군이 아닌 사람이 집단면역 임계값보다 더 많을 경우, R < 1 이 되기 때문입니다. 그리고 R < 1 일때, 정점에 이르고 새로운 사례가 없습니다.
+<icon s></icon> 감염대상군이 아닌 사람이 집단면역 역치값을 초과했을 경우, R < 1 이 되기 때문입니다. 그리고 R < 1 일때, 정점에 이르고 새로운 사례가 없습니다.
 
 **이 안내서에서 한 가지만 얻으신다면, 여기 있습니다.** 굉장히 복잡한 도표이므로 충분한 시간을 두고 숙지하세요:
 
@@ -320,7 +320,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 
-아.
+앗.
 
 이것이 흔히 말하는 "두번째 유행"입니다. 락다운을 헤졔하자마자, R > 1이 됩니다. 따라서, 완치되지 않은 <icon i></icon> 감염군 (아니면 유입된 <icon i></icon> 감염군)이 있는 한, 사례가 다시 재발되고 시나리오 0: 아무것도 하지 않았을 때와 비슷한 양상을 보일 것입니다.
 
@@ -334,7 +334,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
 [^lockdown_harvard]: “다른 조치가 없으면, 사회적 거리두기의 핵심 지표는 중환자실 수용력을 초과하는지 여부입니다. 이를 피하기 위해서는 2022년까지 장기간 또는 간혈적인 사회적 거리두기가 필요할 수 있습니다.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**여기 시뮬레이션을 해봅시다:** ("정해진 시나리오"를 해보신 후에는 시뮬레이션이 *진행되는 동안* 슬라이드 바를 이용해 *자체* 락다운 기간으로 시뮬레이션 해보세요! 시뮬레이션을 일시 정지, 계속, 속도 변경하실 수 있음을 명심하세요.)
+**여기 시뮬레이션을 해봅시다:** ("정해진 시나리오"를 해보신 후에는 시뮬레이션이 *진행되는 동안* 슬라이드 바를 이용해 *자체* 락다운 기간으로 시뮬레이션 해보세요! 시뮬레이션을 일시 정지, 계속 재생, 속도 변경하실 수 있음을 명심하세요.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
@@ -573,116 +573,116 @@ R을 더 낮추기 위한 *다른* 조치들은 말할 것도 없죠:
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>다음 몇 년</div>
+        <div>앞으로 몇 년</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+COVID-19에 감염되고 회복합니다. 또는 COVID-19 백신을 접종 받습니다. 어느 쪽이든 당신은 이제 면역이 되었어요...
 
-...*for how long?*
+...*얼마나 오랫동안 일까요?*
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+* COVID-19와 가장 가까운 SARS 바이러스에 생존자들은 2년간의 면역력을 보였다.[^SARS immunity]
+* "감기"를 유발하는 코로나 바이러스는 8개월의 면역력을 보였다.[^cold immunity]
+* COVID-19에서 회복한 후 다시 양성반응을 보인다는 보고가 있습니다. 하지만 이것이 거짓 양성인지는 불분명합니다.[^unclear]
+* *아직 논문심사 전인* 한 연구에서 원숭이는 COVID-19에 최소 28일동안 면역력을 보였다.[^monkeys]
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+하지만 2020년 5월 1일 현재, *인간은* COVID-19에 "얼마나 오래" 면역력을 유지하는지 잘 알려지지 않았다.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARS immunity]: “SARS-특정 항체는 평균 2년동안 유지되었다 [...] 따라서, SARS 환자는 초기 노출 후 ≥3년 후에 재감염 될 수 있다.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "슬프게도" SARS를 빨리 근절했기 때문에 면역이 얼마나 오래 지속됐는지 알 수 없습니다.
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold immunity]: “첫 번째 감염 및 확진 34주후에 한 번 이상 양성 반응이 나올 확률과 베타 코로나 바이러스 HKU1와 OC43에 대한 재발 확률에 유의미한 차이를 발견하지 못했다.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^unclear]: “바이러스를 이겨내면, 바이러스 입자들은 한동안 남아있는 경향이 있다. 재감염을 유발할 수는 없지만 양성 반응이 나올 수 있다.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later.
+[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *고지 사항: 이 기사는 사전 인쇄되어 논문 검사를 통해 (아직) 인증되지 않았다.* 또한, 28일 후에야 재감염 검사를 시행했다.
 
-For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
+시뮬레이션을 위해, 1년이라고 가정해봅시다.
+**100%<icon r></icon> 회복군에서 시작해서** 기하 급수적으로 취약해지고, *평균적으로* 1년후에는 <icon s></icon> 감염대상군이 되었습니다:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+지수적 감쇠 곡선입니다!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+이것은 바로 **SEIRS 모형** 입니다. 마지막 "S"는 다시 <icon s></icon> Susceptible 감염대상군을 의미합니다.
 
 ![](pics/seirs.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+자, COVID-19 발병 후 10년동안 무대응을 시뮬레이션 해봅시다... *그리고 면역력은 1년만 지속될 경우:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+이전 시뮬레이션에서는 환자 수가 중환자실 수용 인원을 "한번" 초과했었습니다. 지금은 여러번 변동하고 <icon i></icon>감염군은 *영구적으로* 중환자실 수용량에 도달했습니다. (이전에 임의로 *3배로* 늘린 상태입니다)
 
-R = 1, it's **endemic.**
+R = 1이면, 감염병이 인구 집단내에 **토착(endemic)** 하게 됩니다.
 
-Thankfully, because summer reduces R, it'll make the situation better:
+다행히, 여름이 되면 R이 줄어들 것이고 시뮬레이션이 나아질 것입니다:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 </div>
 
-Oh.
+앗.
 
-Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+반대로, 여름이 더 악화시키고 규칙적이게 됐습니다! 새로운 <icon i></icon>감염군이 감소하지만, 그 결과 <icon r></icon> 면역군도 감소하기 때문입니다. 이는 여름에 면역이 급락하여 겨울에 심각한 변동을 *만들어낼* 겁니다.
 
-Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
+다행히도 해결책은 매우 간단하죠. 독감 예방주사를 하는 것처럼 매년 가을/겨울에 예방접종을 하면 됩니다:
 
-**(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+**(이미 설정된 값으로 시뮬레이션 해보시고, 나중에 당신의 예방접종 계획을 시뮬레이션 해보세요! 일시 정지, 계속 재생, 속도 변경하실 수 있음을 명심하세요)**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-But here's the scarier question:
+여기 무서운 질문입니다:
 
-What if there's no vaccine for *years*? Or *ever?*
+만약 백신이 *몇 년동안* 없다면요? 아니면 *평생동안?*
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment.
+**분명히 하자면 가능성이 낮습니다.** 대부분의 역학 연구자들은 1년에서 2년 안에 백신을 접종할 것으로 예상합니다. 물론 전에 다른 코로나 바이러스 백신은 없었습니다. SARS는 빠르게 근절되었고 "일반" 감기는 투자 가치가 없었기 때문입니다.
 
-Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
+그럼에도 불구하고, 전염병 연구원들은 우려가 많습니다: 충분히 만들 수 없다면?[^vax_enough] 너무 서두르다가 안전하지 않다면?[^vax_safe]
 
-[^vax_enough]: “If a coronavirus vaccine arrives, can the world make enough?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
+[^vax_enough]: “코로나 바이러스 백신 개발을 해도 전세계적으로 충분히 만들 수 있을까?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
-[^vax_safe]: “Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
+[^vax_safe]: “안전 보장없이 COVID-19 백신 및 약물을 배포하기 위해 서두르지 마십시오” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
 
-Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:
+"백신 없는" 시나리오에서도, 여전히 3가지 방도가 있습니다. 아주 끔찍한 방도에서 덜 끔찍한 방도:
 
-1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
+1) "자연적 집단 면역"을 구현하기 위해 간혈적 또는 느슨하게 R < 1 처치를 합니다. (주의: 많은 사망과 폐 손상을 초래할 것입니다. *그리고* 면역이 지속되지 않으면 효과 없습니다.)
 
-2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
+2) 평생 R < 1 조치를 합니다. COVID-19 이후로 세계 역학 조사 및 마스크 착용이 새로운 규범이 됩니다. 성병 검사와 콘돔 착용이 HIV 이후로 새로운 규범이 된 것처럼요.
 
-3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
+3) 치료법을 개발해 COVID-19로 중환자실 포화가 되지 않도록 계속 R < 1 조치를 합니다. (*어쨌든* 우리가 해야 할 일이죠!) 중환자실 사용을 10배 줄이면 수용량이 10배만큼 증가하는 것이죠:
 
-**Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
+**이 시뮬레이션에서는 지속적인 면역이 없고, 백신도 없고, 조치도 없습니다. 장기적인 급증에서 살아남기 위해 서서히 용량을 늘립니다:**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-Even under the *worst* worst-case scenario... life perseveres.
+*아주* 최악의 경우일지라도... 인내하며 살면 됩니다.
 
 . . .
 
-Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
+우리 가정에 동의하지 않으신다면, 다른 R<sub>0</sub>나 숫자들을 시도해보세요. 아니면 *당신의* 치료 조치 계획을 세워보세요!
 
-**Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
+** (선택사항) *모든 것을* 시도해보실 수 있는 샌드박스 모드입니다! (스크를을 사용해 설정을 바꿔보세요) 원하시는대로 마음껏 시뮬레이션 해보세요:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
 
-This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
+이 기본적인 "전염병 비행 시뮬레이터는" 많은 것을 가르쳐주었습니다. 지난 몇 달, 다음 몇 달, 그리고 앞으로 몇 년동안의 질문에 답할 수 있죠.
 
-So finally, let's return to...
+이제 마지막으로, 다시 돌아가보죠...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Now</div>
+        <div>지금</div>
     </div>
 </div>
 
