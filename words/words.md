@@ -682,28 +682,28 @@ R = 1이면, 감염병이 인구 집단내에 **토착(endemic)** 하게 됩니�
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>지금</div>
+        <div>바로 지금</div>
     </div>
 </div>
 
-Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
+비행기는 침몰했습니다. 구명 뗏목에 올라탔습니다. 마른 땅을 찾을 시간이네요.[^dry_land]
 
-[^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
+[^dry_land]: 마른 땅의 비유 [Marc Lipsitch & Yonatan Grad, STAT 뉴스](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Teams of epidemiologists and policymakers ([left](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [right](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), and [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) have come to a consensus on how to beat COVID-19, while protecting our lives *and* liberties.
+역학자 및 정책 입안자들이 팀을 이뤄 ([좌파](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [우파](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), [다당파](https://ethics.harvard.edu/covid-roadmap)) 우리의 삶 *그리고* 자유를 보호하면서 어떻게 COVID-19를 종식시킬 것인가에 대한 합의에 도달했습니다.
 
-Here's the rough idea, with some (less-consensus) backup plans:
+(합의되지 않은) 백업 계획과 대략적인 아이디어는 다음과 같습니다:
 
 ![](pics/plan.png)
 
-So what does this mean for YOU, right now?
+그럼 지금 당신에게는 무엇을 의미합니까?
 
-**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+**모두:** 최대한 빨리 1단계에서 벗어날 수 있도록 락다운 상태를 유지하세요. 계속 손도 씻으세요. 마스크도 만드세요. 다음달에 공개될 *개인 정보 보호된* 역학 조사 어플을 다운받으세요. 신제적, 정신적으로 건강하게 지내세요! 그리고 지역 정책 입안자에게 편지를 써서 꽁지 빠지게 일하라고 재촉하세요...
 
-**For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
+**정책 입안자:** 자가격리/시설격리 대상에게 지원하는 대첵을 마련하세요. 역학 조사관을 더 많이 고용하고, 개인 정보 보호된 역학 조사 *지원* 어플을 개발을 도우세요. 개발해야 자원에 더 많은 자금을 지원하세요...
 
-**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope.
+**개발자:** 검사를 개발하세요. 인공호흡기를 만드세요. 병원 개인 보호 장비도 만드세요. 검사도, 어플도, 항바이러스제, 예방접종약, 그리고 백신이 아닌 다른 치료법들을 개발하세요. 검사도, 검사도, 검사도 만드세요. 희망을 만드세요.
 
-Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
+희망을 쌓기 위해 두려움을 없애지 마세요. 비행기와 낙하산 발명자들처럼 두려움과 희망은 *같이* 공존해야 합니다. 끔찍한 미래를 대비하는 것은 희망적인 미래를 *만드는* 방법입니다.
 
-우리가 두려워해야 할 것은 오직 두려움 그 자체라는 생각입니다.
+우리가 두려워해야 할 것은 오직 두려움뿐이라는 생각입니다.
