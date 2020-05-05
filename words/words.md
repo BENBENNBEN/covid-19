@@ -18,9 +18,6 @@
 			&
 			<a href="https://ncase.me/">니키 케이스</a>
 			(그림/코드)
-      &
-      <a>Jamie Lee</a>
-      (번역)
 		</div>
 	</div>
 </div>
@@ -407,7 +404,13 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
 ![](pics/dp3t.png)
 
-(& [전체 만화](https://ncase.me/contact-tracing/))
+([전체 만화](https://ncase.me/contact-tracing/). Details about "pranking"/false positives/etc in footnote:[^dp3t_details])
+
+[^dp3t_details]: To prevent "pranking" (people falsely claiming to be infected), the DP-3T Protocol requires that the hospital first give you a One-Time Passcode that lets you upload your messages.
+
+    False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
+
+    For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
 TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 정보 보호 우선 역학 조사를 안드로이드/iOS에 직접 적용하도록 애플과 구글에게 영감을 주었습니다.[^gapple] (구글과 애플을 믿지 않으세요? 잘됐네요! 이 시스템은 굳이 *신뢰할* 필요가 없어요!) 곧, 지역 공공 보건 기관에서 앱을 설치하도록 요청할지도 모릅니다. 공개 가능한 코드로 개인 정보 보호가 우선된 어플이면, 그렇게 하세요!
 
@@ -419,7 +422,7 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 
 
 하지만 스마트폰이 없는 사람들은 어떻게 할까요? 아니면 문 손잡이를 통한 감염은요? 그게 아니면 "무"증상 사례는요? 역학 조사 앱으로 모든 전염을 알아낼 수 없지만... *그래도 괜찮아요!* 우리는 *모든* 상황이 아닌 60% 이상만 차단해도 R < 1를 이룰 수 있습니다.
 
-(잠복기 감염 vs "무증상" 감염에 대한 고찰. "무증상" 감염은 매우 희귀합니다:[^rant])
+(각주: 잠복기 감염 vs "무증상" 감염에 대한 고찰. "무증상" 감염은 매우 희귀합니다:[^rant])
 
 [^rant]: 많은 뉴스 보도에서 - 그리고 솔직히 많은 연구 논문에서도 - "검사할 때 증상이 나타나지 않은 경우" (잠복기 감염)과 "증상이 *아예* 없는 경우" (무증상 감염)를 구분하지 않고 있습니다. 구별할 수 있는 유일한 방법은 사례를 추적하는 것입니다.
 
@@ -493,7 +496,7 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 
 
 ![](pics/masks.png)
 
-수로 얘기해봅시다: *환자가* 수술용 마스크를 착용했을때 감기와 독감 바이러스 에어로졸의 확산이 70%까지 감소하였습니다.[^outgoing] 전염률을 70%까지 감소하면 락다운 효과와 같습니다!
+숫자로 얘기해봅시다: *전염군이* 수술용 마스크를 착용했을때 감기와 독감 바이러스 에어로졸의 확산이 70%까지 감소하였습니다.[^outgoing] 전염률을 70%까지 감소하면 락다운 효과와 같습니다!
 
 하지만, 마스크가 COVID-19에 *구체적으로* 미치는 영향을 확실히 알지 못합니다. 과학세계에서는 95%의 신뢰가 있으면 연구 결과를 발표합니다. (...신뢰하면요.[^replication]) 2020년 5월 1일자 기준, 마스크의 "신뢰수준은 95%보다 낮습니다".
 
@@ -503,11 +506,9 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 
 
 [^precautionary]: “예방 원칙을 적용할 때다.” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-비용: 집에서 만든 천 마스크라면, 손 씻는 데 드는 비누의 비용과 같습니다. 수술용 마스크라면 더 비싸지만 그래도 꽤 쌉니다.
+비용: 집에서 만든 천 마스크라면, 엄청 쌉니다 (수술용 마스크보다 2/3만큼 효과적 입니다[^homemade]). 수술용 마스크라면 더 비싸지만 그래도 꽤 쌉니다.
 
 편익: 수술용 마스크가 50 대 50의 확률로 전파율이 0% 혹은 70% 감소하는데, 평균 "기대치"가 35%이므로, 락다운에 반 이나 되는 셈입니다! 그러니까 수술용 마스크가 R를 35%나 감소시킨다고 해봅시다. (슬라이더를 위/아래로 움직여 새로운 가정을 세울 수 있습니다)
-
-**마스크가 R을 어떻게 감소시키는 보여주는 계산기가 있습니다! 천 마스크와 수술용 마스크를 바꿔가면서 시뮬레이션 하실 수 있습니다:** (천 마스크가 수술용 마스크보다 2/3만큼 효과적이라고 가정합니다[^homemade])
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
@@ -519,19 +520,21 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 유사한 팀과 함께 개인 
 
    **"제대로 착용하기 어렵습니다."** WHO 지침에 따라 손을 씻는 것도 어렵습니다, "3 단계: 오른쪽 손바닥을 왼쪽 손등위로 올린다"?! 하지만 여전히 손 씻기를 추천합니다. 왜냐하면 완벽하지 않아도 아예 안하는 것보다 낫기 때문입니다.
 
-   **"손 씻기나 사회적 거리두기가 잘 지켜지지 않을 겁니다."** 그래요, 그럼 안전벨트는 사람들로 하여금 정지 표시판을 무시하게 하고, 치실은 바위를 먹게 만들겠네요. 하지만 정말로, 그에 반대예요. 마스크는 조심하라는 *물리적 알림* 이죠. 그리고 동아시아세는 마스크는 연대의 상징이고요!
+   **"손 씻기나 사회적 거리두기가 잘 지켜지지 않을 겁니다."** 그래요, 그럼 안전벨트는 사람들로 하여금 정지 표시판을 무시하게 하고, 치실은 바위를 먹게 만들겠네요. 하지만 정말로, 그에 반대예요. 마스크는 조심하라는 *물리적 알림* 이죠. 그리고 동아시아서는 마스크는 연대의 상징이고요!
 
 
 
-*오직* 마스크만 쓴다고 R < 1를 만들 수 없어요. 손 씻기와 "검사, 추적, 격리"가 같이 이뤄질 때 R = 1.10가 될 수 있어요. 인구의 2/3가 *천* 마스크를 쓰면 R < 1로 넘어가게 될 거에요. 바이러스는 종식이죠!
+*오직* 마스크만 쓴다고 R < 1를 만들 수 없어요. 손 씻기와 "검사, 추적, 격리"가 같이 이뤄질 때 R = 1.10가 될 수 있어요. 인구의 1/3가 마스크를 쓰면 R < 1로 넘어가게 될 거에요. 바이러스는 종식이죠!
 
 **여름:**
 
 좋아요, 우리가 통제할 수 있는 "조치"는 아니지만, 도움이 될 겁니다! 일부 뉴스 매체는 여름이 COVID-19이 아무런 도움이 되지 않을 것이라고 보도했습니다. 반만 맞았습니다: 여름이라고 R < 1를 얻지 못하지만 R을 *감소시킬* 것입니다.
 
-COVID-19의 경우, 1°C마다 (1.8°F) R이 1.2% 감소합니다.[^heat] 뉴욕식의 여름과 겨울 온도차는 15°C (27°F) 입니다. 따라서 여름이되면 R이 18% 감소할 것입니다.
+COVID-19의 경우, 1°C마다 (1.8°F) R이 1.2% 감소합니다.[^heat] 뉴욕식의 여름과 겨울 온도차는 26°C (47°F) 입니다. 따라서 여름이되면 R이 ~31% 감소할 것입니다.
 
 [^heat]: “섭씨 1도 상승으로 [...] R이 0.0225 감소한다” 그리고 “100개 도시의 평균 R값은 1.83이다”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+
+[^nyc_heat]: In 2019 at Central Park, hottest month (July) was 79.6°F, coldest month (Jan) was 32.5°F. Difference is 47.1°F, or ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
@@ -548,7 +551,7 @@ COVID-19의 경우, 1°C마다 (1.8°F) R이 1.2% 감소합니다.[^heat] 뉴욕
 다음은 "게으른 경우" 시뮬레이션입니다:
 
 1. 락다운
-2. 적당한 위생 + "검사, 추적, 격리" + "모두에게 *천* 마스크", then...
+2. 적당한 위생 & "검사, 추적, 격리" & 적당한 "모두에게 *천* 마스크", then...
 3. 백신이 발견되기 전까지 한번이상의 "서킷 브레이커" 락다운.
 
 <div class="sim">
