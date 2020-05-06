@@ -18,6 +18,9 @@
 			&
 			<a href="https://ncase.me/">니키 케이스</a>
 			(그림/코드)
+      &
+			<a>BENBENNBEN</a>
+			(번역)
 		</div>
 	</div>
 </div>
