@@ -60,7 +60,7 @@
 
 COVID-19 바이러스 *발생 초기에* *평균적으로*[^serial_interval] 4일마다 <icon i></icon>에서 <icon s></icon>로 전염되었습니다. (많은 변수가 있을 수 있다는 것을 명심하세요.)
 
-[^serial_interval]: “평균 [지속] 기간은 3.96일입니다 (95% CI 3.53–4.39일)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)(고지 사항: 초기 문서는 최종 문서로 간주하지 않습니다.)
+[^serial_interval]: “평균 [지속] 기간은 3.96일입니다 (95% CI 3.53–4.39일)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)(참고 사항: 초기 문서는 최종 문서로 간주하지 않습니다.)
 
 만약 인구의 0.001% <span class="nowrap"><icon i></icon></span>가 "4일마다 2배씩 늘어나고" *아무것도 하지 않는다고* 가정한다면, 어떻게 될까요?
 
@@ -100,7 +100,7 @@ COVID-19 바이러스 *발생 초기에* *평균적으로*[^serial_interval] 4�
 
 COVID-19는 <icon i></icon> *평균적으로* [^infectiousness] 10일 동안 감염됩니다. 즉, 10일이 지나기 전에 일부는 회복되고, 일부는 그 후에 회복됩니다. **인구의 100% <span class="nowrap"><icon i></icon></span>로 *시작하면* 다음과 같습니다:**
 
-[^infectiousness]: “평균 전달 가능한 기간은 \[...\] 9.5일입니다.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) 예, "중앙값"과 "평균"은 같지 않다는 것을 알고 있습니다. 교육 목적을 위해 같은 의미로 사용했습니다.
+[^infectiousness]: “평균 전달 가능한 기간은 \[...\] 9.5일입니다.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) "중앙값"과 "평균"은 같지 않다는 것을 알고 있습니다. 교육 목적을 위해 같은 의미로 사용했습니다.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
@@ -253,7 +253,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
 [^icu_covid]: ["2020년 2월 12일부터 3월 16일까지 중환자실 입원이 필요한 미국 COVID-19 나이별 사례 비율"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). *모든* COVID-19 사례 중 4.9% ~ 11.5%가 중환자실 입원이 필요했습니다. 낮은 연령대의 경우, 5%였고 20명당 1명이었습니다. 이 총 사례는 미국의 연령 구조에 따른 것이며, 높은 연령대의 인구가 많은 나라에서는 높을 것이고 낮은 연령대의 인구가 많은 나라에서는 낮을 것입니다.
 
-[^icu_us]: “중환자실 병상 수 = 96,596”. [중환자의학회](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) 2009년 미국 인구는 약 328,200,000명이었습니다. 328,200,000명당 96,596개의 병상 = 약 3,400명당 1개의 병상입니다.
+[^icu_us]: “[중환자의학회]에 의하면 중환자실 병상 수는 96,596개 입니다.” (https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) 2009년 미국 인구는 약 328,200,000명이었습니다. 328,200,000명당 96,596개의 병상 = 약 3,400명당 1개의 병상입니다.
 
 만약 *3배 이상* 늘어나서 2%까지 수용해도, *아무것도 하지 않았을 경우*는 이렇습니다.:*
 
@@ -274,9 +274,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
 모든 공중 보건 기구가 "역학 곡선을 평평하게 (flatten the curve)" 한다는 계획을 내세웠고, 영국의 "집단면역" 전략은 전 세계적으로 야유받았습니다. 하지만 *같은 계획입니다.* 영국은 커뮤니케이션이 서툰 것이었죠.[^yong]
 
-[^yong]: “실제 목표는 다른 국가의 목표와 같습니다: 감염의 악순환을 저지해서 역학 곡선을 평평하게 하는 것이죠. 그로 인해 집단면역을 달성하는 겁니다. 집단면역은 목표가 아니라 부가적으로 이뤄지는 것이며 [...] 온라인으로 제공된 정부의 코로나바이러스 행동 계획서에는 집단면역이 언급되지 않았습니다.”
-
-    [더 아틀란틱 기사, 에드 용 기자](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+[^yong]: “실제 목표는 다른 국가의 목표와 같습니다: 감염의 악순환을 저지해서 역학 곡선을 평평하게 하는 것이죠. 그로 인해 집단면역을 달성하는 겁니다. 집단면역은 목표가 아니라 부가적으로 이뤄지는 것이며 [...] 온라인으로 제공된 정부의 코로나바이러스 행동 계획서에는 집단면역이 언급되지 않았습니다.” [더 아틀란틱 기사, Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
 그러나 두 계획 모두 치명적인 결함이 있었습니다.
 
@@ -284,7 +282,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
 고소득 국가에서 손 씻는 비율이 증가했을 때 일반 감기와 독감 발생률이 25%가 감소한 반면에[^handwashing], 대도시 락다운이 내려진 런던은 ~70%까지 감소하였습니다[^london]. 따라서 손 씻기가 R 값을 25%*까지* 감소시키고 거리두기가 R 값을 70%*까지* 감소시킨다고 가정해봅시다:
 
-[^handwashing]: “모든 8개 연구에 따르면, 손 씻기로 호흡기 감염의 위험이 6%에서 44%까지 감소한 것으로 나타났습니다 [합동분산 24% (95% CI 6–40%)].” 이 시뮬레이션에서는 단순화를 위해 합동분산편차를 25%로 반올림하였습니다. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) 참고: 이 메타 분석에서 짚었듯이, 손 씻기에 관한 연구는 (적어도 고소득 국가에서) 제대로 이뤄지지 않았습니다.
+[^handwashing]: “모든 8개 연구에 따르면, 손 씻기로 호흡기 감염의 위험이 6%에서 44%까지 감소한 것으로 나타났습니다 [합동분산 24% (95% CI 6–40%)].” 이 시뮬레이션에서는 단순화를 위해 합동분산편차를 25%로 반올림하였습니다. 참고: 이 메타 분석에서 짚었듯이, 손 씻기에 관한 연구는 (적어도 고소득 국가에서) 제대로 이뤄지지 않았습니다. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x)
 
 [^london]: “피실험자의 평균 일일 접촉 대상의 수는 73% 감소한 것으로 나타났습니다. 이는 R0이 락다운 전 2.6에서 락다운 후 0.62 (0.37 - 0.89)까지 떨어지기에 충분했습니다”. 이 시뮬레이션에서는 단순화를 위해 70% 감소로 반올림하였습니다. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
@@ -350,7 +348,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
 **정신 건강:** 외로움은 우울증, 불안 및 자살의 가장 큰 위험 요인 중 하나입니다. 그리고 하루의 담배 15개비를 피우는 것과 같이 조기 사망에 관련 있습니다.[^loneliness]
 
-[^loneliness]: 참고 [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). 물론, 중요한 고지 사항은 인과관계가 아닌 "상관관계"라는 것입니다. 그러나 연구를 위해 무작위로 피실험자들을 평생 외롭도록 할당할 수 없는 한, 관측 증거만 있습니다.
+[^loneliness]: 참고: [도형 6. Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). 물론, 중요한 것은 인과관계가 아닌 "상관관계"라는 것입니다. 그러나 연구를 위해 무작위로 피실험자들을 평생 외롭도록 할당할 수 없는 한, 관측 증거만 있습니다.
 
 **재정 건강:** "경제도 있잖아요"하면 생명보다 돈을 더 걱정하는 것처럼 들리지만, "경제"는 단순히 주식뿐만은 아닙니다. 사랑하는 가족에게 의식주를 제공하거나 자녀들의 미래에 투자하고 예술과 음식, 비디오 게임을 지기고, 우리 인생을 즐기는 것도 경제적이죠. 게다가, 가난은 심신 건강에 나쁘고요.
 
@@ -412,7 +410,7 @@ COVID-19에 감염된 약 20명 중 1명이 중환자실 (ICU)에 입원합니�
 
     거짓 양성은 대면조사와 지원 어플 추적에서 생기는 공통된 문제죠. 그렇지만, 2가지 방법으로 거짓 양성을 줄일 수 있습니다: 1) 단순 문자 1개가 아닌, 30분 이상의 메시지를 받았을 때만 밥에게 알립니다. 2) 밥이 접촉했다고 *의심되는* 경우, 지역 역학조사 시설에 방문해 자세한 *대면조사를* 받게 합니다.
 
-    데이터 대역폭, 소스 무결성 및 기타 보안 문제와 같은 다른 자세한 사항은 [DP-3T 오픈소스 공식 보고서!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)에서 확인하세요.
+    데이터 대역폭, 소스 무결성 및 기타 보안 문제와 같은 다른 자세한 사항은 [DP-3T 오픈소스 공식 보고서](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)에서 확인하세요.
 
 TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 팀은 개인 정보 보호 우선 역학조사를 안드로이드/iOS에 직접 적용하도록 애플과 구글에게 영감을 주었습니다.[^gapple] (구글이나 애플을 신뢰하지 않으세요? 괜찮아요! 이 시스템의 장점은 *신뢰가* 필요 없어요!) 곧, 지역 공공 보건 기관에서 앱을 설치하도록 요청할지도 모릅니다. 개인 정보 보호가 우선되고 공개된 코드로 쓰인 앱이면, 꼭 다운로드 하세요!
 
@@ -428,13 +426,13 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 팀은 개인 정보 보호 우
 
 [^rant]: 많은 뉴스 보도에서 - 심지어 연구 논문에서도 - "검사할 때 증상이 나타나지 않은 경우"(잠복기 감염)와 "증상이 *아예* 없는 경우"(무증상 감염)를 구분하지 않습니다. 구별할 수 있는 유일한 방법은 사례를 추적하는 것이죠.
 
-    그게 바로 이 [연구 논문](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) 해낸 것입니다. (고지 사항: "초기 문서는 최종 문서로 간주하지 않습니다.") 한국 콜센터에서의 COVID-19 집단발병의 경우, "확진자 4명(1.9%)은 14일의 격리가 끝날 때까지 증상이 나타나지 않았고, 가족 중 2차 감염자가 한 명도 없었습니다."
+    그게 바로 이 [연구 논문](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) 해낸 것입니다. (참고 사항: "초기 문서는 최종 문서로 간주하지 않습니다.") 한국 콜센터에서의 COVID-19 집단발병의 경우, "확진자 4명(1.9%)은 14일의 격리가 끝날 때까지 증상이 나타나지 않았고, 가족 중 2차 감염자가 한 명도 없었습니다."
 
     즉, "무증상 감염"은 희귀하고, 무증상 감염자에게서 전염되는 것은 더 가능성이 낮습니다!
 
 *유증상* 감염자들을 격리했을 때 R은 40%까지 감소하고, 역학적 연관이 있는 *잠복기/무증상* 감염자들을 격리했을 때 50%까지 감소할 것으로 추정하였습니다[^oxford]:
 
-[^oxford]: COVID-19에 대항하기 위해 지원 앱을 처음 제시한 옥스퍼드 연구와 같은 보고서를 보면: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) 도형 2. R<sub>0</sub> = 2.0이라고 가정했을 때, 연구 결과는 다음과 같았습니다:    
+[^oxford]: COVID-19에 대항하기 위해 지원 앱을 처음 제시한 옥스퍼드 연구와 같은 보고서를 보면: 도형 2. R<sub>0</sub> = 2.0이라고 가정했을 때, 연구 결과는 다음과 같았습니다: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data)
 
     * 유증상 환자 R = 0.8 (40%)
     * 잠복기 환자 R = 0.9 (45%)
@@ -494,7 +492,7 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 팀은 개인 정보 보호 우
 
 [^outgoing]: “감염군이 수술용 마스크를 올바르게 착용했을 때 전반적으로 에어로졸 유전자 복제수(Copy Number)가 3.4배 감소[70% 감소]했고, 존슨 등(2009)은 큰 물방울의 확산을 예방하는데 임상적으로 효과적이라고 평가했습니다.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
-[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) 표1: 박테리아 에어로졸에 100% 면 티셔츠는 수술용 마스크의 약 2/3의 필터 효과를 보였습니다.
+[^homemade]: 표1: 박테리아 에어로졸에 100% 면 티셔츠는 수술용 마스크의 약 2/3의 필터 효과를 보였습니다.[Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55)
 
 ![](pics/masks.png)
 
@@ -502,7 +500,7 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 팀은 개인 정보 보호 우
 
 하지만, 마스크가 COVID-19에 *구체적으로* 미치는 영향을 확실하게 모릅니다. 과학에서는 95%의 신뢰가 있어야 연구 결과를 발표합니다. (...정말로 신뢰가 있어야죠.[^replication]) 2020년 5월 1일자 기준, 마스크의 "신뢰도는 95%보다 낮습니다".
 
-[^replication]: 아마 과학자라면 마지막 문장을 읽고 눈물 흘리며 웃을 겁니다. 참고: [p-해킹](https://en.wikipedia.org/wiki/Data_dredging), [재현성 위기](https://en.wikipedia.org/wiki/Replication_crisis))
+[^replication]: 아마 과학자라면 마지막 문장을 읽고 눈물 흘리며 웃을 겁니다. 참고: [p-해킹](https://en.wikipedia.org/wiki/Data_dredging), [재현성 위기](https://en.wikipedia.org/wiki/Replication_crisis)
 
 그렇지만, 팬데믹은 포커와 같습니다. **95% 확실할 때만 내기를 하면, 모든 것을 위태롭게 할 겁니다.** 영국 의학 논문에 실린 마스크에 관한 최근 기사에서,[^precautionary] 불확실한 상황에서 비용과 편익 분석을 *해야 한다고* 했습니다. 그러니 해봅시다:
 
@@ -602,9 +600,9 @@ COVID-19에 감염되고 회복했습니다. 혹은 COVID-19 백신을 접종받
 
 [^cold-immunity]: “첫 번째 감염 및 확진 34주 후에 한 번 이상 양성 반응이 나올 확률과 베타 코로나 바이러스 HKU1와 OC43에 대한 재발 확률에 유의미한 차이를 발견하지 못했습니다.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^unclear]: “바이러스를 이겨내면, 바이러스 입자들은 한동안 남아있는 경향이 있습니다. 재감염을 유발할 수는 없지만 양성 반응이 나올 수 있습니다.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^unclear]: “바이러스를 이겨내면, 바이러스 입자들은 한동안 남아있는 경향이 있습니다. 재감염을 유발할 수는 없지만 양성 반응이 나올 수 있습니다.” [STAT 뉴스, Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *고지 사항: 이 연구는 아직 논문 검사를 통해 인증되지 않았습니다.* 또한, 28일 후에야 재감염 검사를 시행했습니다.
+[^monkeys]: *참고 사항: 이 연구는 아직 논문 검사를 통해 인증되지 않았습니다.* 또한, 28일 후에야 재감염 검사를 시행했습니다.[Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract)
 
 우리의 시뮬레이션을 위해, 면역력이 1년이라고 가정해봅시다.
 **100% <span class="nowrap"><icon r></icon></span>에서 시작해서** 기하급수적으로 취약해지고, *평균적으로* 1년 후에는 <span class="nowrap"><icon s></icon></span>이 되었습니다:
@@ -655,9 +653,9 @@ R = 1이면, 병이 인구 집단 내에 **토착(endemic)** 하게 됩니다.
 
 그럼에도 불구하고, 전염병 연구원들의 우려가 큽니다: 혹시 충분히 만들 수 없다면요?[^vax_enough] 너무 서두르다가 안전하지 않다면요?[^vax_safe]
 
-[^vax_enough]: “코로나 바이러스 백신 개발을 해도 전 세계적으로 충분히 만들 수 있을까요?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
+[^vax_enough]: “코로나 바이러스 백신 개발을 해도 전 세계적으로 충분히 만들 수 있을까요?” [Roxanne Khamsi, 네이쳐](https://www.nature.com/articles/d41586-020-01063-8)
 
-[^vax_safe]: “안정성이 보장되지 않은 COVID-19 백신 및 약물을 배포하기 위해 서두르지 마십시오.” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
+[^vax_safe]: “안정성이 보장되지 않은 COVID-19 백신 및 약물을 배포하기 위해 서두르지 마십시오.” [Shibo Jiang, 네이쳐](https://www.nature.com/articles/d41586-020-00751-9)
 
 "백신 없는" 시나리오에서도 3가지 대책이 있습니다. 아주 끔찍한 대책에서 덜 끔찍한 대책 순입니다:
 
