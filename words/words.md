@@ -432,7 +432,7 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 팀은 개인 정보 보호 우
 
     즉, "무증상 감염"은 희귀하고, 무증상 감염자에게서 전염되는 것은 더 가능성이 낮습니다!
 
-*유증상* 감염자들을 격리했을 때 R은 40%까지 감소하고, 역학적 연관이 있는 *잠복기/무증상* 감염자들을 격리했을 때 50%까지 감소할 것으로 추정하였습니다:
+*유증상* 감염자들을 격리했을 때 R은 40%까지 감소하고, 역학적 연관이 있는 *잠복기/무증상* 감염자들을 격리했을 때 50%까지 감소할 것으로 추정하였습니다[^oxford]:
 
 [^oxford]: COVID-19에 대항하기 위해 지원 앱을 처음 제시한 옥스퍼드 연구와 같은 보고서를 보면: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) 도형 2. R<sub>0</sub> = 2.0이라고 가정했을 때, 연구 결과는 다음과 같았습니다:    
 
@@ -532,7 +532,7 @@ TCN 프로토콜[^tcn] 및 MIT PACT[^pact]같은 팀은 개인 정보 보호 우
 
 좋아요, 우리가 통제할 수 있는 "조치"는 아니지만, 계절도 도움될 거에요! 일부 뉴스 매체는 여름이 COVID-19이 아무런 도움이 되지 않으리라고 보도했습니다. 반만 맞은 셈이죠: 여름 온도로 R < 1을 얻지 못하지만, R을 *감소시킬* 수 있습니다.
 
-COVID-19는 1°C마다 (1.8°F) R이 1.2%씩 감소합니다.[^heat] 뉴욕시의 여름과 겨울 온도차는 26°C (47°F)입니다. 따라서 여름이 되면 R이 ~31% 감소할 것입니다.
+COVID-19는 1°C마다 (1.8°F) R이 1.2%씩 감소합니다.[^heat] 뉴욕시의 여름과 겨울 온도차는 26°C (47°F)입니다. 따라서 여름이 되면 R이 ~31% 감소할 것입니다[^nyc_heat].
 
 [^heat]: “섭씨 1도 상승으로 [...] R이 0.0225 감소합니다” 그리고 “100개 도시의 평균 R 값은 1.83입니다”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
@@ -591,16 +591,16 @@ COVID-19에 감염되고 회복했습니다. 혹은 COVID-19 백신을 접종받
 
 ...*얼마나 오랫동안 유지될까요?*
 
-* COVID-19와 가장 가까운 SARS 바이러스 생존자들은 2년간의 면역력을 보였습니다.[^SARS immunity]
-* "감기"를 유발하는 코로나바이러스는 8개월의 면역력을 보였습니다.[^cold immunity]
+* COVID-19와 가장 가까운 SARS 바이러스 생존자들은 2년간의 면역력을 보였습니다.[^SARS-immunity]
+* "감기"를 유발하는 코로나바이러스는 8개월의 면역력을 보였습니다.[^cold-immunity]
 * COVID-19에서 회복한 후 다시 양성반응을 보였다는 보고가 있습니다. 하지만 이것이 거짓 양성인지는 불분명합니다.[^unclear]
 * *아직 논문심사 전인* 한 연구에서 원숭이는 COVID-19에 최소 28일 동안 면역력을 보였습니다.[^monkeys]
 
 2020년 5월 1일 현재, *인간은* COVID-19에 "얼마나 오래" 면역력을 유지하는지 알려지지 않았습니다.
 
-[^SARS immunity]: “SARS-특정 항체는 평균 2년 동안 유지되었습니다 [...] 즉, SARS 환자는 초기 노출 후 ≥3년 후에 재감염 될 수 있습니다.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "아쉽게도" SARS를 빨리 근절했기 때문에 면역이 얼마나 오래갔는지 알 수 없습니다.
+[^SARS-immunity]: “SARS-특정 항체는 평균 2년 동안 유지되었습니다 [...] 즉, SARS 환자는 초기 노출 후 3년 이후에 재감염 될 수 있습니다.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "아쉽게도" SARS를 빨리 근절했기 때문에 면역이 얼마나 오래갔는지 알 수 없습니다.
 
-[^cold immunity]: “첫 번째 감염 및 확진 34주 후에 한 번 이상 양성 반응이 나올 확률과 베타 코로나 바이러스 HKU1와 OC43에 대한 재발 확률에 유의미한 차이를 발견하지 못했습니다.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold-immunity]: “첫 번째 감염 및 확진 34주 후에 한 번 이상 양성 반응이 나올 확률과 베타 코로나 바이러스 HKU1와 OC43에 대한 재발 확률에 유의미한 차이를 발견하지 못했습니다.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
 [^unclear]: “바이러스를 이겨내면, 바이러스 입자들은 한동안 남아있는 경향이 있습니다. 재감염을 유발할 수는 없지만 양성 반응이 나올 수 있습니다.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
