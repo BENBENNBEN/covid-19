@@ -1,49 +1,17 @@
-[Play it here!](https://ncase.me/covid-19/)
+![](https://raw.githubusercontent.com/BENBENNBEN/covid-19/master/sharing/thumbnail.png)
+<br>
+<br>
+다음에 무슨 일이 일어날까요?<br>
+시뮬레이션으로 설명하는 COVID-19 이후의 미래<br><br>
 
-# How To Translate
+[[한국어판]](https://benbennben.github.io/covid-19/)<br>
+[[원본]](https://ncase.me/covid-19/)
+<br><br>
+제작/이미지: [Nicky Case](https://ncase.me/)<br>
+역학자: [Marcel Salathé](https://scholar.google.com/citations?user=_wHMGkUAAAAJ&hl=en)<br>
+번역/이미지 수정: BENBENNBEN
+<br>
+<br>
 
-Step 1)
-
-Check to see if it's already been translated to your language!
-Go to the [main site](https://ncase.me/covid-19/), look at the left sidebar.
-
-Step 2)
-
-If your language hasn't been done yet, check Github Issues to see if someone's already working on it.
-**If so:** help them!
-**If not:** fork this repo & link to your fork in a new Github Issue,
-announcing that you're translating for that language!
-
-Step 3)
-
-Translate `words.md`, (6000 words) then export it to html
-– make sure your Markdown app supports footnotes –
-and copy-paste that into the `<article></article>` part of `index.html`.
-
-Translate the `<head>`, sidebars, & footer of `index.html` (200 words) **Feel free to add yourself in the header/footer credits as a translator! :)**
-
-Translate the images in `/pics` (800 words)
-If you don't have image-editing software, ask for help on the Github Issue!
-The fonts are [Open Sans](https://fonts.google.com/specimen/Open+Sans) and [Patrick Hand](https://fonts.google.com/specimen/Patrick+Hand)
-
-Translate `sim/index.html` (100 words)
-
-Translate the thumbnail `sharing/thumbnail.png`
-
-Step 4)
-
-Use Github Pages to put your forked translation live on the interweb (Go to 'Settings' of your repository page and choose your master branch as your source)!
-
-Step 5)
-
-Send a Pull Request editing *just* `<div id="translations">` in `index.html`
-to add a link to your translation from the main page.
-
-Step 6)
-
-Wait for me to get off my lazy butt & accept the Pull Request (within \~72 hours? maybe?)
-
-Step 7)
-
-🎉 Party! Your translation should now be linked to from the main page.
-(Remember to close your Github Issue!)
+[[소스코드(원본)]](https://github.com/ncase/covid-19)<br>
+[[번역]](https://github.com/ncase/covid-19/blob/master/README.md#how-to-translate)
